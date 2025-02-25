@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign In</title>
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+	
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+	
+    <!-- Bootstrap Icons -->
+    <!-- <link href="assets/css/bootstrap-icons.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    
+	<!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/tt-firs-neue-trl" rel="stylesheet">
+</head>
+
+
+<body>
+    <section class="sign-in-main">
+        <div class="container-fluid">
+            <div class="row align-items-stretch">
+                <div class="col-lg-3 form-out">
+                    <div class="form-top"><img src="assets/img/logo.png">
+                        <p>How do i get started lorem ipsum dolar at?</p>
+                        <button class="google-btn"><img src="assets/img/google.png"><a href="#">Register With Google</a></button>
+                        <p class="small_grey">- - - - Or Register with Email - - - -</p>
+                    </div>
+
+
+                    <form id="sign-in" class="mt-2">
+
+
+                        <div class="row g-3">
+                            <div class="col-md-12">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="Enter Your Email">
+                            </div>
+                            <div class="col-md-12 position-relative">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter Your Password">
+                                <span class="password-toggle" onclick="togglePassword('password', 'eyeIcon1')">
+                <i class="bi bi-eye-slash" id="eyeIcon1"></i>
+            </span>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="submit" class="register btn btn-primary mt-4"><a href="#">Register</a></button>
+                            </div>
+                            <div class="col-md-12 mt-3 d-flex justify-content-start align-items-center">
+                                <a href="#" class="forgot-pw text-decoration-none">Forgot Password?</a>
+                            </div>
+                        </div>
+
+                        <p class="small_grey text-start form-text mt-3">
+                            Already have an account? <a href="#" class="text-decoration-none"><b>Sign In</b></a>
+                        </p>
+                    </form>
+
+                </div>
+
+                <div class="col-lg-9 img-side">
+                    <div class="img-side-content">
+                        <h2>Very good works<br>are waiting for<br>you <span>Sign In Now</span></h2>
+                    </div>
+                    <img src="assets/img/sign-in.png">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Copyright text section -->
+    <section class="copyright-text">
+        <div class="container-fluid">
+            <p>© Copyright 2024, All Rights Reserved</p>
+        </div>
+    </section>
+
+</body>
+
+
+</html>
+
+<script>
+    function togglePassword(fieldId, iconId) {
+        let passwordField = document.getElementById(fieldId);
+        let eyeIcon = document.getElementById(iconId);
+
+        if (passwordField.type === "password") {
+            passwordField.type = "text";
+            eyeIcon.classList.remove("bi-eye-slash");
+            eyeIcon.classList.add("bi-eye");
+        } else {
+            passwordField.type = "password";
+            eyeIcon.classList.remove("bi-eye");
+            eyeIcon.classList.add("bi-eye-slash");
+        }
+    }
+</script>
