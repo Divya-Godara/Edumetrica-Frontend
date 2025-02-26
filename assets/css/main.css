@@ -31,6 +31,9 @@ h6 {
     width: 100%;
     float: left;
     background: #FBFBFA;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
 }
 .user-type h1 {
     font-size: 40px;
@@ -300,13 +303,13 @@ section.forgot-password .img-side-content {
 section.forgot-password .img-side-content h2 {
     padding-left: 55px;
 }
-button.confirm-email {
+button.confirm-email, button.sign-in {
     height: 50px;
     border-radius: 30px;
     background: #27AAE1;
     border: 1px solid #27AAE1;
 }
-button.confirm-email a {
+button.confirm-email a, button.sign-in a {
     color: #fff;
     font-size: 18px;
     text-decoration: none;
