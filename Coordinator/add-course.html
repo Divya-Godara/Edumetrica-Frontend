@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Edumetrica (Add Course)</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon//favicon-16x16.png">
+    <link rel="manifest" href="../assets/img/favicon//site.webmanifest">
+
+
+    <!-- Fonts and icons -->
+    <link href="https://fonts.cdnfonts.com/css/tt-firs-neue-trl" rel="stylesheet">
+    <script src="../assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+        WebFont.load({
+            google: { families: ["Public Sans:300,400,500,600,700"] },
+            custom: {
+              families: [
+                "Font Awesome 5 Solid",
+                "Font Awesome 5 Regular",
+                "Font Awesome 5 Brands",
+                "simple-line-icons", 
+              ],
+              urls: ["../assets/css/fonts.min.css"],
+            },
+            active: function () {
+              sessionStorage.fonts = true;
+            },
+          });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="../assets/css/edumetrica.min.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> -->
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="top-panel">
+                <div class="sidebar-logo">
+                    <div class="logo_header">
+                        <a href="index.html" class="logo">
+                            <img src="../assets/img/logo.png" alt="navbar brand" />
+                        </a>
+                    </div>
+                    <!-- End Logo Header -->
+                </div>
+                <div class="sidebar-wrapper scrollbar scrollbar-inner">
+                    <div class="sidebar-content">
+                        <ul class="nav nav-secondary">
+                            <li class="nav-item">
+                                <a href="#">
+                                    <i class="fas fa-desktop"></i>
+                                    <p>Lorem Ipsum</p>
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="#dashboard" class="" aria-expanded="false">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+
+                                    <p>Teachers</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">
+                                    <i class="fas fa-desktop"></i>
+                                    <p>Lorem Ipsum</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">
+                                    <i class="fas fa-desktop"></i>
+                                    <p>Lorem Ipsum</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">
+                                    <i class="fas fa-desktop"></i>
+                                    <p>Lorem Ipsum</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-panel">
+                <div class="logout-panel">
+                    <ul class="nav nav-secondary">
+                        <li class="nav-item">
+                            <a href="#">
+                                <i class="fas fa-sign-out-alt"></i>
+
+                                <p>Logout</p>
+                            </a>
+                        </li>
+                        <ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Sidebar -->
+
+        <div class="main-panel">
+            <div class="main-header">
+                <div class="main-header-logo">
+                    <!-- Logo Header -->
+                    <div class="logo-header" data-background-color="dark">
+                        <a href="index.html" class="logo">
+                            <img src="../assets/img/logo.png" alt="navbar brand" />
+                        </a>
+                        <div class="nav-toggle">
+                            <button class="btn btn-toggle toggle-sidebar">
+                                <i class="gg-menu-right"></i>
+                            </button>
+                            <button class="btn btn-toggle sidenav-toggler">
+                                <i class="gg-menu-left"></i>
+                            </button>
+                        </div>
+                        <button class="topbar-toggler more">
+                            <i class="gg-more-vertical-alt"></i>
+                        </button>
+                    </div>
+                    <!-- End Logo Header -->
+                </div>
+                <!-- Navbar Header -->
+                <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
+                    <div class="container-fluid">
+                        <nav class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <button type="submit" class="btn btn-search pe-1">
+                                        <img src="../assets/img/search.svg">
+                                    </button>
+                                </div>
+                                <input type="text" placeholder="Search ..." class="form-control" />
+                            </div>
+                        </nav>
+
+                        <ul class="top_icons navbar-nav topbar-nav ms-md-auto align-items-center">
+                            <li class="nav-item topbar-icon dropdown hidden-caret">
+                                <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/img/bell.svg">
+                                    <span class="notification">4</span>
+                                </a>
+                                <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+                                    <li>
+                                        <div class="dropdown-title">
+                                            You have 4 new notification
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notif-scroll scrollbar-outer">
+                                            <div class="notif-center">
+                                                <a href="#">
+                                                    <div class="notif-icon notif-primary">
+                                                        <i class="fa fa-user-plus"></i>
+                                                    </div>
+                                                    <div class="notif-content">
+                                                        <span class="block"> New user registered </span>
+                                                        <span class="time">5 minutes ago</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="notif-icon notif-success">
+                                                        <i class="fa fa-comment"></i>
+                                                    </div>
+                                                    <div class="notif-content">
+                                                        <span class="block">
+                                Rahmad commented on Admin
+                              </span>
+                                                        <span class="time">12 minutes ago</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="notif-img">
+                                                        <img src="../assets/img/profile2.jpg" alt="Img Profile" />
+                                                    </div>
+                                                    <div class="notif-content">
+                                                        <span class="block">
+                                Reza send messages to you
+                              </span>
+                                                        <span class="time">12 minutes ago</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="notif-icon notif-danger">
+                                                        <i class="fa fa-heart"></i>
+                                                    </div>
+                                                    <div class="notif-content">
+                                                        <span class="block"> Farrah liked Admin </span>
+                                                        <span class="time">17 minutes ago</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="see-all" href="javascript:void(0);">See all notifications<i class="fa fa-angle-right"></i>
+                      </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item topbar-icon dropdown hidden-caret">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/img/settings.svg">
+                                </a>
+                            </li>
+
+                            <li class="nav-item topbar-user dropdown hidden-caret">
+                                <a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#" aria-expanded="false">
+                                    <div class="avatar-sm">
+                                        <img src="../assets/img/james.svg" alt="..." class="avatar-img rounded-circle" />
+                                    </div>
+                                    <span class="profile-username">
+                      <span class="fw-bold">James</span>
+                                    </span>
+                                    <span class="down-icon">
+				 <img src="../assets/img/down-arrow.png"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user animated fadeIn">
+                                    <div class="dropdown-user-scroll scrollbar-outer">
+                                        <li>
+                                            <div class="user-box">
+                                                <div class="avatar-lg">
+                                                    <img src="../assets/img/profile.jpg" alt="image profile" class="avatar-img rounded" />
+                                                </div>
+                                                <div class="u-text">
+                                                    <h4>James</h4>
+                                                    <p class="text-muted">hello@example.com</p>
+                                                    <a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a
+                            >
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">My Profile</a>
+                                                    <a class="dropdown-item" href="#">My Balance</a>
+                                                    <a class="dropdown-item" href="#">Inbox</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Account Setting</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Logout</a>
+                                        </li>
+                                        </div>
+                                </ul>
+                            </li>
+                        </ul>
+                        </div>
+                </nav>
+                <!-- End Navbar -->
+                </div>
+
+                <div class="container">
+                    <div class="page-inner">
+                        <div class="page-inner-header d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
+                            <div class="icon_text d-flex align-items-center">
+                                <div class="user-icon-out">
+                                    <img class="back-img" src="../assets/img/arrow.svg" alt="Image" />
+                                </div>
+                                <div>
+                                    <h3 class="mb-0">Add New Course</h3>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit ...</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="mt-4 add-course">
+                            <ul class="course-tabs nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#manual">Add Manually</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#bulk">Add In Bulk</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div id="manual" class="tab-pane fade show active">
+
+
+                                    <div class="row">
+                                        <div class="col-md-5 px-2">
+                                            <div class="course-cover">
+                                                <div class="container">
+                                                    <p class="course-head">Course Cover Image</p>
+                                                    <div class="d-flex align-items-end">
+                                                        <!-- Image Upload Box -->
+                                                        <div class="p-4 d-flex justify-content-center align-items-center" style="width: 250px; height: 215px; background-color: #E8F2F9; border-radius: 12px;">
+                                                            <img src="../assets/img/cover-icon.svg" alt="Image" style="width: 50px;" />
+                                                        </div>
+
+                                                        <!-- Upload Button -->
+                                                        <div class="ms-3">
+                                                            <button class="btn rounded-pill px-4">Choose</button>
+                                                            <p style="font-size: 12px;">Max. File Size: 5MB</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 px-2">
+
+
+                                            <div class="includes">
+                                                <div class="container">
+                                                    <p class="course-head">Includes</p>
+                                                    <div class="pt-2 p-4" style="border-radius: 12px; background-color: #E8F2F9;">
+                                                        <div class="row g-2">
+                                                            <div class="col-md-6 px-1">
+                                                                <label class="text-muted">Enrolled</label>
+                                                                <input type="text" class="bg-white rounded-pill form-control" placeholder="Type Here..">
+                                                            </div>
+                                                            <div class="col-md-6 px-1">
+                                                                <label class="text-muted">Video</label>
+                                                                <input type="text" class="bg-white rounded-pill form-control" placeholder="Type Here..">
+                                                            </div>
+                                                            <div class="col-md-6 px-1">
+                                                                <label class="text-muted">Duration</label>
+                                                                <input type="text" class="bg-white rounded-pill form-control" placeholder="Type Here..">
+                                                            </div>
+                                                            <div class="col-md-6 px-1">
+                                                                <label class="text-muted">Level</label>
+                                                                <input type="text" class="bg-white rounded-pill form-control" placeholder="Type Here..">
+                                                            </div>
+                                                            <div class="col-md-6 px-1">
+                                                                <label class="text-muted">Chapters</label>
+                                                                <input type="text" class="bg-white rounded-pill form-control" placeholder="Type Here..">
+                                                            </div>
+                                                            <div class="col-md-6 px-1">
+                                                                <label class="text-muted">Enrolled</label>
+                                                                <input type="text" class="bg-white rounded-pill form-control" placeholder="Type Here..">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <!-- Weekly Hours Section -->
+                                        <div class="col-md-10 px-2">
+                                            <div class="weekly-hours">
+                                                <div>
+                                                    <div class="d-flex align-items-center">
+                                                        <input type="radio" id="weeklyHours" name="courseHours" checked>
+                                                        <label for="weeklyHours" class="course-head ms-2">Weekly Hours</label>
+                                                    </div>
+                                                    <div class="row px-2">
+                                                        <!-- Days (Monday - Saturday) -->
+
+
+                                                        <div class="col-md-2 mb-3 px-1">
+                                                            <div class="days">
+                                                                <label>Tuesday</label>
+
+                                                                <div class="day-bg d-flex align-items-center justify-content-center mb-1">
+                                                                    <span>From</span>
+                                                                    <select class="form-select">
+                                                                        <option selected="">9am</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="day-bg d-flex align-items-center justify-content-center mb-1">
+                                                                    <span>To</span>
+                                                                    <select class="form-select">
+                                                                        <option selected="">11am</option>
+                                                                    </select>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 mb-3 px-1">
+                                                            <div class="days">
+                                                                <label>Wednesday</label>
+
+                                                                <div class="day-bg d-flex align-items-center justify-content-center mb-1">
+                                                                    <span>From</span>
+                                                                    <select class="form-select">
+                                                                        <option selected="">9am</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="day-bg d-flex align-items-center justify-content-center mb-1">
+                                                                    <span>To</span>
+                                                                    <select class="form-select">
+                                                                        <option selected="">11am</option>
+                                                                    </select>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-2 mb-3 px-1">
+                                                            <div class="days">
+                                                                <label>Thursday</label>
+
+                                                                <div class="day-bg d-flex align-items-center justify-content-center mb-1">
+                                                                    <span>From</span>
+                                                                    <select class="form-select">
+                                                                        <option selected="">9am</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="day-bg d-flex align-items-center justify-content-center mb-1">
+                                                                    <span>To</span>
+                                                                    <select class="form-select">
+                                                                        <option selected="">11am</option>
+                                                                    </select>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 mb-3 px-1">
+                                                            <div class="days">
+                                                                <label>Thursday</label>
+
+                                                                <div class="day-bg d-flex align-items-center justify-content-center mb-1">
+                                                                    <span>From</span>
+                                                                    <select class="form-select">
+                                                                        <option selected="">9am</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="day-bg d-flex align-items-center justify-content-center mb-1">
+                                                                    <span>To</span>
+                                                                    <select class="form-select">
+                                                                        <option selected="">11am</option>
+                                                                    </select>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 mb-3 px-1">
+                                                            <div class="days">
+                                                                <label>Thursday</label>
+
+                                                                <div class="day-bg d-flex align-items-center justify-content-center mb-1">
+                                                                    <span>From</span>
+                                                                    <select class="form-select">
+                                                                        <option selected="">9am</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="day-bg d-flex align-items-center justify-content-center mb-1">
+                                                                    <span>To</span>
+                                                                    <select class="form-select">
+                                                                        <option selected="">11am</option>
+                                                                    </select>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 mb-3 px-1">
+                                                            <div class="days">
+                                                                <label>Thursday</label>
+
+                                                                <div class="day-bg d-flex align-items-center justify-content-center mb-1">
+                                                                    <span>From</span>
+                                                                    <select class="form-select">
+                                                                        <option selected="">9am</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="day-bg d-flex align-items-center justify-content-center mb-1">
+                                                                    <span>To</span>
+                                                                    <select class="form-select">
+                                                                        <option selected="">11am</option>
+                                                                    </select>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Total Course Hours Section -->
+                                        <div class="col-md-2 px-2">
+                                            <div class="total-hour p-3" style="height:100%; background-color: #fff; border-radius: 12px;">
+                                                <div class="d-flex align-items-center">
+                                                    <input type="radio" id="totalHours" name="courseHours">
+                                                    <label for="totalHours" class="course-head ms-2">Total Course Hours</label>
+                                                </div>
+                                                <div class="mt-5">
+                                                    <select class="form-select">
+                                                        <option selected>4 hours</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row mt-4">
+                                        <div class="col-md-6 px-3">
+                                            <p class="course-head" style="padding-left: 10px;">Course Title</p>
+                                            <input type="text" class="bg-white rounded-pill form-control" placeholder="Course Title">
+                                        </div>
+                                        <div class="col-md-6 px-3">
+                                            <p class="course-head" style="padding-left: 10px;">Assign to a Teacher</p>
+                                            <div class="mt-2">
+                                                <select class="form-select" style="border-radius: 20px; height: 40px; text-indent: 6px;">
+                                                    <option selected="">Florence Shaw</option>
+                                                    <option selected="">Florence Shaw</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <div class="col-md-12 px-3">
+                                            <p class="course-head" style="padding-left: 10px;">Subtitle</p>
+                                            <input type="text" class="bg-white rounded-pill form-control" placeholder="Subtitle">
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <div class="col-md-12 px-3">
+                                            <p class="course-head" style="padding-left: 10px;">Course Description</p>
+                                            <textarea class="form-control" style="border-radius: 18px;" id="courseDescription" rows="6" placeholder="Course Description"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <div class="col-md-12 px-3">
+                                            <p class="course-head" style="padding-left: 10px;">Requirements</p>
+                                            <textarea class="form-control" style="border-radius: 18px;" id="requirements" rows="6" placeholder="Course Description"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <div class="col-md-12">
+                                            <p class="course-head" style="padding-left: 10px;">Requirements</p>
+                                            <div class="learn-points">
+                                                <ul class="list-unstyled gap-2">
+                                                    <li class="p-2 d-flex justify-content-between align-items-center">
+                                                        Become a UX designer.
+                                                        <button class="btn btn-sm rounded-circle"><i class="fas fa-times"></i></button>
+                                                    </li>
+                                                    <li class="p-2 d-flex justify-content-between align-items-center">
+                                                        You will be able to add UX designer to your CV
+                                                        <button class="btn btn-sm btn-light border rounded-circle">✖</button>
+                                                    </li>
+                                                    <li class="p-2 d-flex justify-content-between align-items-center">
+                                                        Become a UI designer.
+                                                        <button class="btn btn-sm btn-light border rounded-circle">✖</button>
+                                                    </li>
+                                                    <li class="p-2 d-flex justify-content-between align-items-center">
+                                                        Build & test a full website design.
+                                                        <button class="btn btn-sm btn-light border rounded-circle">✖</button>
+                                                    </li>
+                                                    <li class="p-2 d-flex justify-content-between align-items-center">
+                                                        Build & test a full mobile app.
+                                                        <button class="btn btn-sm btn-light border rounded-circle">✖</button>
+                                                    </li>
+                                                    <li class="p-2 d-flex justify-content-between align-items-center">
+                                                        Learn to design websites & mobile phone apps.
+                                                        <button class="btn btn-sm btn-light border rounded-circle">✖</button>
+                                                    </li>
+                                                    <li class="p-2 d-flex justify-content-between align-items-center">
+                                                        You'll learn how to choose colors.
+                                                        <button class="btn btn-sm btn-light border rounded-circle">✖</button>
+                                                    </li>
+                                                    <li class="p-2 d-flex justify-content-between align-items-center">
+                                                        Prototype your designs with interactions.
+                                                        <button class="btn btn-sm btn-light border rounded-circle">✖</button>
+                                                    </li>
+                                                    <li class="p-2 d-flex justify-content-between align-items-center">
+                                                        Export production-ready assets.
+                                                        <button class="btn btn-sm btn-light border rounded-circle">✖</button>
+                                                    </li>
+                                                    <li class="p-2 d-flex justify-content-between align-items-center">
+                                                        All the techniques used by UX professionals.
+                                                        <button class="btn btn-sm btn-light border rounded-circle">✖</button>
+                                                    </li>
+                                                </ul>
+                                                <a href="#" class="">+ Add More</a>
+                                            </div>
+                                            <button class="submit btn mt-3 btn-round"><a href="#">Submit</a></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div id="bulk" class="tab-pane fade">
+                                    <div class="container mt-4">
+                                        <div class="upload_file">
+                                            <h5 class="fw-bold">Upload File</h5>
+                                            <div class="upload-box d-flex justify-content-center align-items-center">
+                                                <input type="file" id="fileInput" hidden>
+                                                <img style="width: 70px; " src="../assets/img/folder.svg" alt="Image" />
+                                                <p>Drag & Drop file here or <a href="#" onclick="document.getElementById('fileInput').click(); return false;">Choose File</a></p>
+                                            </div>
+                                            <div class="mt-3 d-flex justify-content-between align-items-center">
+                                                <p>Supported formats: XLS, XLSX & CSV</p>
+                                                <p>Maximum Size: 25MB</p>
+                                            </div>
+                                            <div class="text-center mt-3">
+                                                <button class="upload-btn btn-round"><i class="far fa-file-alt"></i> Upload File</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!--   Core JS Files   -->
+        <script src="../assets/js/core/jquery-3.7.1.min.js"></script>
+        <script src="../assets/js/core/popper.min.js"></script>
+        <script src="../assets/js/core/bootstrap.min.js"></script>
+
+        <!-- jQuery Scrollbar -->
+        <script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+        <!-- Chart JS -->
+        <script src="../assets/js/plugin/chart.js/chart.min.js"></script>
+
+        <!-- jQuery Sparkline -->
+        <script src="../assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+        <!-- Chart Circle -->
+        <script src="../assets/js/plugin/chart-circle/circles.min.js"></script>
+
+        <!-- Datatables -->
+        <script src="../assets/js/plugin/datatables/datatables.min.js"></script>
+
+        <!-- Bootstrap Notify -->
+        <script src="../assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+        <!-- jQuery Vector Maps -->
+        <script src="../assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+        <script src="../assets/js/plugin/jsvectormap/world.js"></script>
+
+        <!-- Sweet Alert -->
+        <script src="../assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+        <!-- edumetrica JS -->
+        <script src="../assets/js/edumetrica.min.js"></script>
+
+
+
+</body>
+
+</html>
