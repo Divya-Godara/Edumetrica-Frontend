@@ -37,10 +37,10 @@ a {
 	text-decoration: none !important
 }
 
-a:focus,
+/* a:focus,
 a:hover {
 	color: #1269db
-}
+} */
 
 .h1,
 h1 {
@@ -4158,6 +4158,7 @@ body[data-background-color=dark] .border-top {
 .form-control {
 	font-size: 1rem;
 	border-color: #ebedf2;
+	text-align: left;
 	padding: .6rem 1rem;
 	height: inherit !important;
 	border-width: 2px
@@ -6284,12 +6285,12 @@ label.error {
 	border-color: transparent
 }
 
-.btn-light:disabled,
+/* .btn-light:disabled,
 .btn-light:focus,
 .btn-light:hover {
 	background: #ebecec !important;
 	border-color: transparent
-}
+} */
 
 .btn-dropdown-card-header {
 	padding: 0;
@@ -6564,13 +6565,13 @@ label.error {
 	border-radius: 0
 }
 
-.nav-pills>li:first-child>.nav-link {
+/* .nav-pills>li:first-child>.nav-link {
 	border-radius: 4px 0 0 4px !important
 }
 
 .nav-pills>li:last-child>.nav-link {
 	border-radius: 0 4px 4px 0 !important
-}
+} */
 
 .nav-link.disabled {
 	color: #6c757d !important
@@ -6581,10 +6582,10 @@ label.error {
 }
 
 .nav-pills>li>.nav-link {
-	border-radius: 0 !important;
+	/* border-radius: 0 !important; */
 	margin-top: 5px;
 	margin-bottom: 5px;
-	border: 1px solid #1572e8;
+	/* border: 1px solid #1572e8; */
 	color: #585c5d
 }
 
@@ -6620,30 +6621,29 @@ label.error {
 }
 
 .nav-pills.flex-column .nav-link {
-	border-radius: 0 !important;
-	border: 1px solid #1572e8;
+	/* border-radius: 0 !important; */
+/* 	border: 1px solid #1572e8; */
 	color: #585c5d;
-	margin-top: -1px;
 	text-align: center;
 	word-wrap: normal;
 	padding: 10px 0
 }
 
-.nav-pills.flex-column .nav-link:hover {
+/* .nav-pills.flex-column .nav-link:hover {
 	background: rgba(222, 222, 222, .4)
-}
+} */
 
 .nav-pills.flex-column .nav-link.active {
 	background: #1572e8
 }
 
-.nav-pills.flex-column .nav-link:first-child {
-	border-radius: 4px 4px 0 0 !important
+/* .nav-pills.flex-column .nav-link:first-child {
+	 border-radius: 4px 4px 0 0 !important 
 }
 
 .nav-pills.flex-column .nav-link:last-child {
-	border-radius: 0 0 4px 4px !important
-}
+	 border-radius: 0 0 4px 4px !important 
+} */
 
 .nav-pills.flex-column.nav-pills-no-bd .nav-link {
 	border: 0 !important;

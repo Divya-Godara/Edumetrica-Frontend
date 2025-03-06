@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Edumetrica (Add Teacher)</title>
+    <title>Edumetrica (Add Students)</title>
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon//favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon//favicon-16x16.png">
@@ -119,7 +119,7 @@
             <!-- End Logo Header -->
           </div>
           <!-- Navbar Header -->
-            <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
+          <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
             <div class="container-fluid">
               <nav class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex">
                 <div class="input-group">
@@ -246,13 +246,13 @@
                   <img class="back-img" src="../assets/img/arrow.svg" alt="Image" />
                 </div>
                 <div>
-                  <h3 class="mb-0">Add Teachers</h3>
+                  <h3 class="mb-0">Add Student</h3>
                   <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit ...</p>
                 </div>
               </div>
             </div>
-            <div class="mt-4 add-teacher">
-              <ul class="teacher-tabs nav nav-tabs">
+            <div class="mt-4 add-student">
+              <ul class="student-tabs nav nav-tabs">
                 <li class="nav-item">
                   <a class="nav-link active" data-bs-toggle="tab" href="#manual">Add Manually</a>
                 </li>
@@ -306,13 +306,17 @@
                               </div>
                             </div>
                             <div class="row mt-3">
-                              <div class="col-md-4 px-1">
-                                <label class="form-label">Age</label>
-                                <input type="text" class="form-control" placeholder="Enter Age">
+							  <div class="col-md-4 px-1">
+                                <label class="form-label">Father’s Name</label>
+                                <input type="text" class="form-control" placeholder="Enter Father’s Name">
                               </div>
                               <div class="col-md-4 px-1">
-                                <label class="form-label">Experience</label>
-                                <input type="text" class="form-control" placeholder="Enter Experience">
+                                <label class="form-label">Mother’s Name</label>
+                                <input type="text" class="form-control" placeholder="Enter Mother’s Name">
+                              </div>
+							  <div class="col-md-4 px-1">
+                                <label class="form-label">Age</label>
+                                <input type="text" class="form-control" placeholder="Enter Age">
                               </div>
                             </div>
                           </div>
@@ -326,40 +330,17 @@
                           <div class="form">
                             <div class="row mt-3">
                               <div class="col-md-4 px-1">
-                                <label class="form-label">Joining Date</label>
+                                <label class="form-label">Admission Date</label>
                                 <div class="input-group calender">
-                                  <input type="text" class="form-control" placeholder="Enter Joining Date">
+                                  <input type="text" class="form-control" placeholder="MM/DD/YYYY">
                                   <span class="input-group-text">
                                     <img src="../assets/img/calender.svg" alt="Calendar" width="18">
                                   </span>
                                 </div>
                               </div>
                               <div class="col-md-4 px-1">
-                                <label class="form-label">Teacher ID</label>
+                                <label class="form-label">Student ID</label>
                                 <input type="text" class="form-control" placeholder="Enter ID">
-                              </div>
-                              <div class="col-md-4 px-1">
-                                <label class="form-label">Education</label>
-                                <input type="text" class="form-control" placeholder="Enter Degree">
-                              </div>
-                            </div>
-                            <div class="row mt-3">
-                              <div class="col-md-4 px-1">
-                                <label class="form-label">Coordinator Name</label>
-                                <select class="form-select">
-                                  <option selected="">James</option>
-                                  <option>Amelie</option>
-                                  <option>Florence</option>
-                                  <option>Caitlyn</option>
-                                </select>
-                              </div>
-                              <div class="col-md-4 px-1">
-                                <label class="form-label">Institute Name</label>
-                                <input type="text" class="form-control" placeholder="Enter Institute Name">
-                              </div>
-                              <div class="col-md-4 px-1">
-                                <label class="form-label">Institute Email</label>
-                                <input type="email" class="form-control" placeholder="Enter Institute Email">
                               </div>
                             </div>
                           </div>
@@ -373,7 +354,7 @@
                           <div class="form">
                             <div class="row mt-3">
                               <div class="col-md-4 px-1">
-                                <label class="form-label">Phone Number</label>
+                                <label class="form-label">Parent’s Phone Number</label>
                                 <div class="input-group phone-no">
                                   <select class="form-select" style="max-width: 70px;">
                                     <option value="+1">+1</option>
@@ -385,7 +366,7 @@
                                 </div>
                               </div>
                               <div class="col-md-4 px-1">
-                                <label class="form-label">Email Id</label>
+                                <label class="form-label">Parent’s Email Id</label>
                                 <input type="email" class="form-control" placeholder="Enter Email">
                               </div>
                             </div>
@@ -421,7 +402,7 @@
                               <div class="col-md-4 px-1">
                                 <label class="form-label">Country</label>
                                 <select class="form-select">
-                                  <option selected="">New York</option>
+                                  <option>New York</option>
                                   <option>India</option>
                                   <option>Canada</option>
                                   <option>Australia</option>
@@ -443,7 +424,7 @@
                         <div class="container mt-4">
                           <button class="update-teacher btn btn-round">
                             <a href="#">
-                              <i class="far fa-paper-plane"></i>Send invitation </a>
+                              <i class="fas fa-check-circle"></i>Add Student</a>
                           </button>
                         </div>
                       </div>
