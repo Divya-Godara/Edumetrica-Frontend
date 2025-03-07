@@ -1,140 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
     <title>Edumetrica (Teacher Details)</title>
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon//favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon//favicon-16x16.png">
     <link rel="manifest" href="../assets/img/favicon//site.webmanifest">
-
-
     <!-- Fonts and icons -->
     <link href="https://fonts.cdnfonts.com/css/tt-firs-neue-trl" rel="stylesheet">
     <script src="../assets/js/plugin/webfont/webfont.min.js"></script>
     <script>
-        WebFont.load({
-            google: { families: ["Public Sans:300,400,500,600,700"] },
-            custom: {
-              families: [
-                "Font Awesome 5 Solid",
-                "Font Awesome 5 Regular",
-                "Font Awesome 5 Brands",
-                "simple-line-icons", 
-              ],
-              urls: ["../assets/css/fonts.min.css"],
-            },
-            active: function () {
-              sessionStorage.fonts = true;
-            },
-          });
+      WebFont.load({
+        google: {
+          families: ["Public Sans:300,400,500,600,700"]
+        },
+        custom: {
+          families: ["Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons", ],
+          urls: ["../assets/css/fonts.min.css"],
+        },
+        active: function() {
+          sessionStorage.fonts = true;
+        },
+      });
     </script>
-
     <!-- CSS Files -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../assets/css/plugins.min.css" />
     <link rel="stylesheet" href="../assets/css/edumetrica.min.css" />
     <link rel="stylesheet" href="../assets/css/custom.css" />
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> -->
-
-</head>
-
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <div class="top-panel">
-                <div class="sidebar-logo">
-                    <div class="logo_header">
-                        <a href="index.html" class="logo">
-                            <img src="../assets/img/logo.png" alt="navbar brand" />
-                        </a>
-                    </div>
-                    <!-- End Logo Header -->
-                </div>
-                <div class="sidebar-wrapper scrollbar scrollbar-inner">
-                    <div class="sidebar-content">
-                        <ul class="nav nav-secondary">
-                            <li class="nav-item">
-                                <a href="#">
-                                    <i class="fas fa-desktop"></i>
-                                    <p>Lorem Ipsum</p>
-                                </a>
-                            </li>
-                            <li class="nav-item active">
-                                <a href="#dashboard" class="" aria-expanded="false">
-                                    <i class="fas fa-chalkboard-teacher"></i>
-
-                                    <p>Teachers</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#">
-                                    <i class="fas fa-desktop"></i>
-                                    <p>Lorem Ipsum</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#">
-                                    <i class="fas fa-desktop"></i>
-                                    <p>Lorem Ipsum</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#">
-                                    <i class="fas fa-desktop"></i>
-                                    <p>Lorem Ipsum</p>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="top-panel">
+          <div class="sidebar-logo">
+            <div class="logo_header">
+              <a href="index.html" class="logo">
+                <img src="../assets/img/logo.png" alt="navbar brand" />
+              </a>
             </div>
-
-            <div class="bottom-panel">
-                <div class="logout-panel">
-                    <ul class="nav nav-secondary">
-                        <li class="nav-item">
-                            <a href="#">
-                                <i class="fas fa-sign-out-alt"></i>
-
-                                <p>Logout</p>
-                            </a>
-                        </li>
-                        <ul>
-                </div>
+            <!-- End Logo Header -->
+          </div>
+          <div class="sidebar-wrapper scrollbar scrollbar-inner">
+            <div class="sidebar-content">
+              <ul class="nav nav-secondary">
+                <li class="nav-item">
+                  <a href="#">
+                    <i class="fas fa-desktop"></i>
+                    <p>Lorem Ipsum</p>
+                  </a>
+                </li>
+                <li class="nav-item active">
+                  <a href="#dashboard" class="" aria-expanded="false">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <p>Teachers</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#">
+                    <i class="fas fa-desktop"></i>
+                    <p>Lorem Ipsum</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#">
+                    <i class="fas fa-desktop"></i>
+                    <p>Lorem Ipsum</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#">
+                    <i class="fas fa-desktop"></i>
+                    <p>Lorem Ipsum</p>
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-        <!-- End Sidebar -->
-
-        <div class="main-panel">
-            <div class="main-header">
-                <div class="main-header-logo">
-                    <!-- Logo Header -->
-                    <div class="logo-header" data-background-color="dark">
-                        <a href="index.html" class="logo">
-                            <img src="../assets/img/logo.png" alt="navbar brand"/>
-                        </a>
-                        <div class="nav-toggle">
-                            <button class="btn btn-toggle toggle-sidebar">
-                                <i class="gg-menu-right"></i>
-                            </button>
-                            <button class="btn btn-toggle sidenav-toggler">
-                                <i class="gg-menu-left"></i>
-                            </button>
-                        </div>
-                        <button class="topbar-toggler more">
-                            <i class="gg-more-vertical-alt"></i>
-                        </button>
-                    </div>
-                    <!-- End Logo Header -->
-                </div>
-                <!-- Navbar Header -->
-                          <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
+        <div class="bottom-panel">
+          <div class="logout-panel">
+            <ul class="nav nav-secondary">
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fas fa-sign-out-alt"></i>
+                  <p>Logout</p>
+                </a>
+              </li>
+              <ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+      <div class="main-panel">
+        <div class="main-header">
+          <div class="main-header-logo">
+            <!-- Logo Header -->
+            <div class="logo-header" data-background-color="dark">
+              <a href="index.html" class="logo">
+                <img src="../assets/img/logo.png" alt="navbar brand" />
+              </a>
+              <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                  <i class="gg-menu-right"></i>
+                </button>
+                <button class="btn btn-toggle sidenav-toggler">
+                  <i class="gg-menu-left"></i>
+                </button>
+              </div>
+              <button class="topbar-toggler more">
+                <i class="gg-more-vertical-alt"></i>
+              </button>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+          <!-- Navbar Header -->
+          <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
             <div class="container-fluid">
               <nav class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex">
                 <div class="input-group">
@@ -251,261 +236,302 @@
               </ul>
             </div>
           </nav>
-                <!-- End Navbar -->
+          <!-- End Navbar -->
+        </div>
+        <div class="container">
+          <div class="page-inner">
+            <div class="page-inner-header d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
+              <div class="icon_text d-flex align-items-center">
+                <div class="user-icon-out">
+                  <img class="back-img" src="../assets/img/arrow.svg" alt="Image" />
                 </div>
-
-                <div class="container">
-                    <div class="page-inner">
-                        <div class="page-inner-header d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
-                            <div class="icon_text d-flex align-items-center">
-                                <div class="user-icon-out">
-                                    <img class="back-img" src="../assets/img/arrow.svg" alt="Image" />
-                                </div>
-                                <div>
-                                    <h3 class="mb-0">Teachers Details</h3>
-                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit ...</p>
-                                </div>
-                            </div>
+                <div>
+                  <h3 class="mb-0">Teachers Details</h3>
+                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit ...</p>
+                </div>
+              </div>
+            </div>
+            <div class="row teacher-details">
+              <div class="col-md-12">
+                <div class="d-flex teacher-info">
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center teacher-profile">
+                      <img src="../assets/img/girl.png" alt="Image" />
+                      <div>
+                        <p class="teacher_name">Florence Shaw</p>
+                        <p class="teacher_mail">florance@untitledui.com</p>
+                      </div>
+                      <div>
+                        <button class="btn edit-btn">
+                          <a href="#">
+                            <img src="../assets/img/erase.svg" alt="Image" />Edit </a>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="inst_details">
+                      <img src="../assets/img/cap.svg" alt="Image" />
+                      <div>
+                        <p>Institute Name</p>
+                        <span>StarWood University</span>
+                      </div>
+                    </div>
+                    <div class="inst_details">
+                      <img src="../assets/img/person.svg" alt="Image" />
+                      <div>
+                        <p>Coordinator Name</p>
+                        <span>Ammar Foley</span>
+                      </div>
+                    </div>
+                    <div class="inst_details">
+                      <img src="../assets/img/mail.svg" alt="Image" />
+                      <div>
+                        <p>Institute Email</p>
+                        <span>ammar@untitledui.com</span>
+                      </div>
+                    </div>
+                    <div class="inst_details">
+                      <img src="../assets/img/call.svg" alt="Image" />
+                      <div>
+                        <p>Teacher Contact</p>
+                        <span>777-784-6214</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5 courses-list">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h3>List of Courses</h3>
+                <button class="add btn btn-round me-2">
+                  <a href="#">
+                    <i class="fas fa-plus"></i>Add Course </a>
+                </button>
+              </div>
+              <div class="col-sm-12">
+                <table class="teacher_table display table table-striped table-hover dataTable" role="grid" aria-describedby="basic-datatables_info">
+                  <thead>
+                    <tr role="row">
+                      <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Course Name: activate to sort column descending" style="width: 22%;">Course Name</th>
+                      <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="Total Lesson: activate to sort column ascending" style="">Total Lesson</th>
+                      <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="Duration: activate to sort column ascending" style="">Duration</th>
+                      <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="Students Enrolled: activate to sort column ascending" style="">Students Enrolled</th>
+                      <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="Allow to Edit / Modify: activate to sort column ascending" style="">Allow to Edit / Modify</th>
+                      <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="Action: activate to sort column ascending" style="">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr role="row" class="odd">
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <span class="course-img">
+                            <img src="../assets/img/course-img.png" alt="Image">
+                          </span> The Complete Web Developer Course 2.0
                         </div>
-                        <div class="row teacher-details">
-                            <div class="col-md-12">
-                           <div class="d-flex teacher-info">
-						   <div class="col-md-6">
-						   
-						   <div class="d-flex align-items-center teacher-profile">
-						   <img src="../assets/img/girl.png" alt="Image" />
-						   <div>
-						   <p class="teacher_name">Florence Shaw</p>
-						   <p class="teacher_mail">florance@untitledui.com</p>
-						   </div>
-						   <div>
-                            <button class="btn edit-btn"><a href="#"><img src="../assets/img/erase.svg" alt="Image"/>Edit</a></button>
-						   </div>						   
-						   </div>
-						   
-						   </div>
-						   <div class="col-md-6">
-						   
-						   <div class="inst_details">
-						   <img src="../assets/img/cap.svg" alt="Image" />
-						   <div>
-						   <p>Institute Name</p>
-						   <span>StarWood University</span>
-						   </div>
-						   </div>
-						   <div class="inst_details">
-						   <img src="../assets/img/person.svg" alt="Image" />
-						   <div>
-						   <p>Coordinator Name</p>
-						   <span>Ammar Foley</span>
-						   </div>
-						   </div>
-						   <div class="inst_details">
-						   <img src="../assets/img/mail.svg" alt="Image" />
-						   <div>
-						   <p>Institute Email</p>
-						   <span>ammar@untitledui.com</span>
-						   </div>
-						   </div>
-						   <div class="inst_details">
-						   <img src="../assets/img/call.svg" alt="Image" />
-						   <div>
-						   <p>Teacher Contact</p>
-						   <span>777-784-6214</span>
-						   </div>
-						   </div>
-						   
-						   </div>
-                            </div>
-                            </div>
+                      </td>
+                      <td>12</td>
+                      <td>9hr 30min</td>
+                      <td>32</td>
+                      <td>
+                        <div class="switch-btn d-flex align-items-center">Deny <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="toggleSwitch" checked>
+                          </div> Allow
+                      </td>
+                      <td>
+                        <div class="actions">
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/erase.svg" alt="Image" />Edit </a>
+                          </button>
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/eye.svg" alt="Image" />View </a>
+                          </button>
                         </div>
-						
-                        <div class="row mt-5 courses-list">
-						<div class="d-flex justify-content-between align-items-center mb-2"><h3>List of Courses</h3> <button class="add btn btn-round me-2"><a href="#"><i class="fas fa-plus"></i>Add Course</a></button></div>
-                                            <div class="col-sm-12">
-                                                        <table class="teacher_table display table table-striped table-hover dataTable" role="grid" aria-describedby="basic-datatables_info">
-                                                            <thead>
-                                                                <tr role="row">
-                                                                    <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Course Name: activate to sort column descending" style="width: 22%;">Course Name</th>
-                                                                    <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="Total Lesson: activate to sort column ascending" style="">Total Lesson</th>
-                                                                    <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="Duration: activate to sort column ascending" style="">Duration</th>
-                                                                    <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="Students Enrolled: activate to sort column ascending" style="">Students Enrolled</th>
-																	<th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="Allow to Edit / Modify: activate to sort column ascending" style="">Allow to Edit / Modify</th>
-                                                                    <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="Action: activate to sort column ascending" style="">Action</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr role="row" class="odd">
-                                                                    <td>
-																	<div class="d-flex align-items-center">
-																	<span class="course-img">
-																	<img src="../assets/img/course-img.png" alt="Image"></span>
-																	The Complete Web Developer Course 2.0
-																	</div>
-																	</td>
-                                                                    <td>12</td>
-                                                                    <td>9hr 30min</td>
-                                                                    <td>32</td>
-                                                                    <td><div class="switch-btn d-flex align-items-center">Deny<div class="form-check form-switch">
-  <input class="form-check-input" type="checkbox" id="toggleSwitch" checked>
-</div> Allow</td>
-                                                                    <td>
-																	<div class="actions">
-																	<button class="btn btn-sm"><a href=""><img src="../assets/img/erase.svg" alt="Image"/>Edit</a></button>
-																	<button class="btn btn-sm"><a href=""><img src="../assets/img/eye.svg" alt="Image"/>View</a></button>
-																	</div>
-																	</td>
-                                                                </tr>                                                                <tr role="row" class="even">
-                                                                    <td>
-																	<div class="d-flex align-items-center">
-																	<span class="course-img">
-																	<img src="../assets/img/course-img.png" alt="Image"></span>
-																	The Complete Web Developer Course 2.0
-																	</div>
-																	</td>
-                                                                    <td>12</td>
-                                                                    <td>9hr 30min</td>
-                                                                    <td>32</td>
-                                                                    <td><div class="switch-btn d-flex align-items-center">Deny<div class="form-check form-switch">
-  <input class="form-check-input" type="checkbox" id="toggleSwitch" checked>
-</div> Allow</td>
-                                                                    <td>
-																	<div class="actions">
-																	<button class="btn btn-sm"><a href=""><img src="../assets/img/erase.svg" alt="Image"/>Edit</a></button>
-																	<button class="btn btn-sm"><a href=""><img src="../assets/img/eye.svg" alt="Image"/>View</a></button>
-																	</div>
-																	</td>
-                                                                </tr>                      <tr role="row" class="odd">
-                                                                    <td>
-																	<div class="d-flex align-items-center">
-																	<span class="course-img">
-																	<img src="../assets/img/course-img.png" alt="Image"></span>
-																	The Complete Web Developer Course 2.0
-																	</div>
-																	</td>
-                                                                    <td>12</td>
-                                                                    <td>9hr 30min</td>
-                                                                    <td>32</td>
-                                                                    <td><div class="switch-btn d-flex align-items-center">Deny<div class="form-check form-switch">
-  <input class="form-check-input" type="checkbox" id="toggleSwitch" checked>
-</div> Allow</td>
-                                                                    <td>
-																	<div class="actions">
-																	<button class="btn btn-sm"><a href=""><img src="../assets/img/erase.svg" alt="Image"/>Edit</a></button>
-																	<button class="btn btn-sm"><a href=""><img src="../assets/img/eye.svg" alt="Image"/>View</a></button>
-																	</div>
-																	</td>
-                                                                </tr>                                                                <tr role="row" class="even">
-                                                                    <td>
-																	<div class="d-flex align-items-center">
-																	<span class="course-img">
-																	<img src="../assets/img/course-img.png" alt="Image"></span>
-																	The Complete Web Developer Course 2.0
-																	</div>
-																	</td>
-                                                                    <td>12</td>
-                                                                    <td>9hr 30min</td>
-                                                                    <td>32</td>
-                                                                    <td><div class="switch-btn d-flex align-items-center">Deny<div class="form-check form-switch">
-  <input class="form-check-input" type="checkbox" id="toggleSwitch" checked>
-</div> Allow</td>
-                                                                    <td>
-																	<div class="actions">
-																	<button class="btn btn-sm"><a href=""><img src="../assets/img/erase.svg" alt="Image"/>Edit</a></button>
-																	<button class="btn btn-sm"><a href=""><img src="../assets/img/eye.svg" alt="Image"/>View</a></button>
-																	</div>
-																	</td>
-                                                                </tr>
-                      <tr role="row" class="odd">
-                                                                    <td>
-																	<div class="d-flex align-items-center">
-																	<span class="course-img">
-																	<img src="../assets/img/course-img.png" alt="Image"></span>
-																	The Complete Web Developer Course 2.0
-																	</div>
-																	</td>
-                                                                    <td>12</td>
-                                                                    <td>9hr 30min</td>
-                                                                    <td>32</td>
-                                                                    <td><div class="switch-btn d-flex align-items-center">Deny<div class="form-check form-switch">
-  <input class="form-check-input" type="checkbox" id="toggleSwitch" checked>
-</div> Allow</td>
-                                                                    <td>
-																	<div class="actions">
-																	<button class="btn btn-sm"><a href=""><img src="../assets/img/erase.svg" alt="Image"/>Edit</a></button>
-																	<button class="btn btn-sm"><a href=""><img src="../assets/img/eye.svg" alt="Image"/>View</a></button>
-																	</div>
-																	</td>
-                                                                </tr>                                                                <tr role="row" class="even">
-                                                                    <td>
-																	<div class="d-flex align-items-center">
-																	<span class="course-img">
-																	<img src="../assets/img/course-img.png" alt="Image"></span>
-																	The Complete Web Developer Course 2.0
-																	</div>
-																	</td>
-                                                                    <td>12</td>
-                                                                    <td>9hr 30min</td>
-                                                                    <td>32</td>
-                                                                    <td><div class="switch-btn d-flex align-items-center">Deny<div class="form-check form-switch">
-  <input class="form-check-input" type="checkbox" id="toggleSwitch" checked>
-</div> Allow</td>
-                                                                    <td>
-																	<div class="actions">
-																	<button class="btn btn-sm"><a href=""><img src="../assets/img/erase.svg" alt="Image"/>Edit</a></button>
-																	<button class="btn btn-sm"><a href=""><img src="../assets/img/eye.svg" alt="Image"/>View</a></button>
-																	</div>
-																	</td>
-                                                                </tr>																
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                        </div>		
-                </div>
-                </div>
-                </div>
-                </div>
-
-
+                      </td>
+                    </tr>
+                    <tr role="row" class="even">
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <span class="course-img">
+                            <img src="../assets/img/course-img.png" alt="Image">
+                          </span> The Complete Web Developer Course 2.0
+                        </div>
+                      </td>
+                      <td>12</td>
+                      <td>9hr 30min</td>
+                      <td>32</td>
+                      <td>
+                        <div class="switch-btn d-flex align-items-center">Deny <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="toggleSwitch" checked>
+                          </div> Allow
+                      </td>
+                      <td>
+                        <div class="actions">
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/erase.svg" alt="Image" />Edit </a>
+                          </button>
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/eye.svg" alt="Image" />View </a>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr role="row" class="odd">
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <span class="course-img">
+                            <img src="../assets/img/course-img.png" alt="Image">
+                          </span> The Complete Web Developer Course 2.0
+                        </div>
+                      </td>
+                      <td>12</td>
+                      <td>9hr 30min</td>
+                      <td>32</td>
+                      <td>
+                        <div class="switch-btn d-flex align-items-center">Deny <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="toggleSwitch" checked>
+                          </div> Allow
+                      </td>
+                      <td>
+                        <div class="actions">
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/erase.svg" alt="Image" />Edit </a>
+                          </button>
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/eye.svg" alt="Image" />View </a>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr role="row" class="even">
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <span class="course-img">
+                            <img src="../assets/img/course-img.png" alt="Image">
+                          </span> The Complete Web Developer Course 2.0
+                        </div>
+                      </td>
+                      <td>12</td>
+                      <td>9hr 30min</td>
+                      <td>32</td>
+                      <td>
+                        <div class="switch-btn d-flex align-items-center">Deny <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="toggleSwitch" checked>
+                          </div> Allow
+                      </td>
+                      <td>
+                        <div class="actions">
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/erase.svg" alt="Image" />Edit </a>
+                          </button>
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/eye.svg" alt="Image" />View </a>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr role="row" class="odd">
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <span class="course-img">
+                            <img src="../assets/img/course-img.png" alt="Image">
+                          </span> The Complete Web Developer Course 2.0
+                        </div>
+                      </td>
+                      <td>12</td>
+                      <td>9hr 30min</td>
+                      <td>32</td>
+                      <td>
+                        <div class="switch-btn d-flex align-items-center">Deny <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="toggleSwitch" checked>
+                          </div> Allow
+                      </td>
+                      <td>
+                        <div class="actions">
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/erase.svg" alt="Image" />Edit </a>
+                          </button>
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/eye.svg" alt="Image" />View </a>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr role="row" class="even">
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <span class="course-img">
+                            <img src="../assets/img/course-img.png" alt="Image">
+                          </span> The Complete Web Developer Course 2.0
+                        </div>
+                      </td>
+                      <td>12</td>
+                      <td>9hr 30min</td>
+                      <td>32</td>
+                      <td>
+                        <div class="switch-btn d-flex align-items-center">Deny <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="toggleSwitch" checked>
+                          </div> Allow
+                      </td>
+                      <td>
+                        <div class="actions">
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/erase.svg" alt="Image" />Edit </a>
+                          </button>
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/eye.svg" alt="Image" />View </a>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            <!--   Core JS Files   -->
-            <script src="../assets/js/core/jquery-3.7.1.min.js"></script>
-            <script src="../assets/js/core/popper.min.js"></script>
-            <script src="../assets/js/core/bootstrap.min.js"></script>
-
-            <!-- jQuery Scrollbar -->
-            <script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-
-            <!-- Chart JS -->
-            <script src="../assets/js/plugin/chart.js/chart.min.js"></script>
-
-            <!-- jQuery Sparkline -->
-            <script src="../assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
-
-            <!-- Chart Circle -->
-            <script src="../assets/js/plugin/chart-circle/circles.min.js"></script>
-
-            <!-- Datatables -->
-            <script src="../assets/js/plugin/datatables/datatables.min.js"></script>
-
-            <!-- Bootstrap Notify -->
-            <script src="../assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
-
-            <!-- jQuery Vector Maps -->
-            <script src="../assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
-            <script src="../assets/js/plugin/jsvectormap/world.js"></script>
-
-            <!-- Sweet Alert -->
-            <script src="../assets/js/plugin/sweetalert/sweetalert.min.js"></script>
-
-            <!-- edumetrica JS -->
-            <script src="../assets/js/edumetrica.min.js"></script>
-
-
-</body>
-
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <!-- jQuery Scrollbar -->
+    <script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <!-- Chart JS -->
+    <script src="../assets/js/plugin/chart.js/chart.min.js"></script>
+    <!-- jQuery Sparkline -->
+    <script src="../assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+    <!-- Chart Circle -->
+    <script src="../assets/js/plugin/chart-circle/circles.min.js"></script>
+    <!-- Datatables -->
+    <script src="../assets/js/plugin/datatables/datatables.min.js"></script>
+    <!-- Bootstrap Notify -->
+    <script src="../assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+    <!-- jQuery Vector Maps -->
+    <script src="../assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+    <script src="../assets/js/plugin/jsvectormap/world.js"></script>
+    <!-- Sweet Alert -->
+    <script src="../assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+    <!-- edumetrica JS -->
+    <script src="../assets/js/edumetrica.min.js"></script>
+  </body>
 </html>

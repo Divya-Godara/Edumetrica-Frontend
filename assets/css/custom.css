@@ -1,6 +1,22 @@
 body {
     font-family: 'TT Firs Neue Trl', sans-serif !important;
 }
+.sky-btn {
+    background: #27aee0;
+    color: #fff;
+    border: 1px solid #27aee0;
+}
+.sky-btn a {
+    color: #fff;
+}
+.sky-btn:hover {
+    color: #27aee0;
+    border: 1px solid #27aee0;
+    background: #fff;
+}
+.sky-btn:hover a {
+    color: #27aee0;
+}
 ul.account li, .notif-box li {
     border: none !important;
     border-radius: 0 !important;
@@ -155,26 +171,17 @@ button.filter:hover {
     padding: 10px;
 }
 button.add {
-    background: #27AAE1;
-    border: 1px solid #27AAE1;
     padding: 10px 14px;
-    color: #fff;
-    min-width: max-content;
 }
 button.add a {
     display: flex;
-    color: #fff;
     align-items: center;
     gap: 6px;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
 }
-button.add:hover {
-    background: #27AAE1;
-    border: 1px solid #27AAE1;
-    padding: 10px 14px;
-}
+
 
 
 
@@ -458,7 +465,6 @@ input#toggleSwitch {
     border: 3px solid #27aee0;
 }
 .profile-side button {
-    background: #27aee0;
     margin-top: 25px;
 }
 .profile-side {
@@ -468,7 +474,6 @@ input#toggleSwitch {
     padding: 15px 15px 40px 15px;
 }
 .profile-side button a {
-    color: #fff;
     font-size: 14px;
 }
 .border-line {
@@ -522,10 +527,17 @@ button.update-teacher a {
     font-weight: 400;
     text-transform: uppercase;
 }
-button.update-teacher, button.update-teacher:hover {
+button.update-teacher {
     background: #0ECE41;
     border: 1px solid #0ECE41;
     padding: 10px 14px;
+}
+button.update-teacher:hover {
+    background: #0ECE41 !important;
+    border: 1px solid #0ECE41 !important;
+}
+button.update-teacher:hover a {
+   color: #fff !important;
 }
 
 /* Add Teacher */
@@ -624,10 +636,6 @@ a.resend {
     margin-bottom: 5px;
     line-height: 22px;
 }
-.course-cover button {
-    background: #27aee0;
-    color: #fff;
-}
 .course-cover .ms-3 p {
     color: #85878D;
     line-height: 16px;
@@ -712,13 +720,10 @@ a.resend {
     color: #27AAE1;
 }
 button.submit.btn {
-    background: #27aee0;
     padding: 12px 30px;
     width: max-content;
-    color: #fff;
 }
 button.submit.btn a{
-    color: #fff;
     font-size: 14px;
 }
 
@@ -1461,8 +1466,6 @@ table#all-students a.view-details {
 }
 
 .btn-custom {
-    background: #27AAE1;
-    color: #fff;
     border-radius: 50px;
     padding: 10px 20px;
     display: inline-block;
@@ -1566,8 +1569,6 @@ div#offers input#acceptCheckbox {
 /* Upgrade-request */
 
 table#upgrade-req tbody tr td a, #user-permission tbody tr td a {
-    color: #fff;
-    background: #27aee0;
     border-radius: 30px;
 }
 table#upgrade-req thead th {

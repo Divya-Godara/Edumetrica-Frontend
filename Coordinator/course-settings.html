@@ -119,7 +119,7 @@
             <!-- End Logo Header -->
           </div>
           <!-- Navbar Header -->
-                    <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
+          <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
             <div class="container-fluid">
               <nav class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex">
                 <div class="input-group">
@@ -380,11 +380,11 @@
                               <span>90</span>
                               <span>100</span>
                             </div>
-                            <input type="range" min="0" max="100" value="70" class="progress-bar-striped range-slider" id="rangeInput">
+                            <input type="range" min="0" max="100" value="70" class="range-slider" id="rangeInput">
                           </div>
                         </div>
                         <div class="row mt-3">
-                          <button class="submit btn mt-3 btn-round">Save</button>
+                          <button class="sky-btn submit btn mt-3 btn-round">Save</button>
                         </div>
                       </div>
                     </div>
@@ -630,188 +630,167 @@
                     <div class="tab-pane fade " id="impactMeasurement" role="tabpanel ">
                       <h3>Impact Measurement</h3>
                       <p>Learn Web Development by building 25 websites and mobile apps using HTML, CSS, Javascript, PHP, Python, MySQL & more!</p>
-					  <p style="font-weight: 500; color:#011631; font-size: 16px;">Select treatment and control groups</p>
-					        <div class="mt-4 impact-measurement">
-                            <ul class="teacher-tabs nav nav-tabs">
-                                <li class="nav-item">
-                                    <a class="nav-link active" data-bs-toggle="tab" href="#predefined-criteria">Predefined Criteria</a>
-                                </li>
-                            </ul>
-
-                            <div class="tab-content">
-                                <div id="predefined-criteria" class="tab-pane fade show active">
-
-
-                                    <div class="row">
-                                    <div class="col-md-12 p-0">
-                                     <div class="filter">
-									 <label style="font-weight:600;">Select predefined criteria :</label>
-									 <select class="form-select" style="margin-left: 10px; width: max-content; border: none; height: 40px; text-indent: 0px;">
-									 <option selected="">Average</option>
-                                      <option selected="">Below Target Average</option>
-                                                    
-                                                </select>
-									 </div>
-                                    </div>
-                                    </div>
-									
-									<div class="row improving-students mt-3 p-3">
-                        <div class="col-md-12 p-0">
-                          <div class="card pt-3">
-                            <div class="d-flex justify-content-between align-items-center card-head pb-3 ">
-                              <p class="fw-bold" style="color:#262A41; font-size: 15px;">Improving List Of Students</p>
-                              <div class="">
-                                <button class="submit btn btn-round me-2" style="padding: 6px 10px;">
-                                  <a href="#">
-                                    Edit List </a>
-                                </button>
+                      <p style="font-weight: 500; color:#011631; font-size: 16px;">Select treatment and control groups</p>
+                      <div class="mt-4 impact-measurement">
+                        <ul class="teacher-tabs nav nav-tabs">
+                          <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#predefined-criteria">Predefined Criteria</a>
+                          </li>
+                        </ul>
+                        <div class="tab-content">
+                          <div id="predefined-criteria" class="tab-pane fade show active">
+                            <div class="row">
+                              <div class="col-md-12 p-0">
+                                <div class="filter">
+                                  <label style="font-weight:600;">Select predefined criteria :</label>
+                                  <select class="form-select" style="margin-left: 10px; width: max-content; border: none; height: 40px; text-indent: 0px;">
+                                    <option selected="">Average</option>
+                                    <option selected="">Below Target Average</option>
+                                  </select>
+                                </div>
                               </div>
                             </div>
-                            <div class="card-body">
-                              <div class="table-responsive">
-                                <div id="basic-datatables_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
-                                  <div class="row">
-                                    <div class="col-sm-12 table_flow">
-                                      <table id="improve-students" class="teacher_table display table table-striped table-hover dataTable " role="grid" aria-describedby="basic-datatables_info ">
-                                        <thead>
-                                          <tr role="row">
-                                            <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1 " colspan="1 " aria-sort="ascending " aria-label="Students: activate to sort column descending" style="">Students</th>
-                                            <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1 " colspan="1 " aria-label="Marks: activate to sort column ascending " style=" ">Marks</th>
-                                            <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1 " colspan="1 " aria-label="Remove activate to sort column ascending " style="">Remove
-                                            </th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr role="row" class="odd">
-                                            <td>
-                                              <div class="d-flex align-items-center ">
-                                                <span class="teacher-profile-img ">
-                                                  <img src="../assets/img/person-img.png" alt="Image">
-                                                </span>
-                                                <div>Ammar Foley </div>
-                                              </div>
-                                            </td>
-                                            <td>496</td>
-                                            <td><a><img src="../assets/img/delete.svg " alt="Image" style="width: 15px;"></a></td>
-                                          </tr>
-										  <tr role="row" class="even">
-                                            <td>
-                                              <div class="d-flex align-items-center ">
-                                                <span class="teacher-profile-img ">
-                                                  <img src="../assets/img/person-img.png" alt="Image">
-                                                </span>
-                                                <div>Ammar Foley </div>
-                                              </div>
-                                            </td>
-                                            <td>496</td>
-                                            <td><a><img src="../assets/img/delete.svg " alt="Image" style="width: 15px;"></a></td>
-                                          </tr>
-										  <tr role="row" class="odd">
-                                            <td>
-                                              <div class="d-flex align-items-center ">
-                                                <span class="teacher-profile-img ">
-                                                  <img src="../assets/img/person-img.png" alt="Image">
-                                                </span>
-                                                <div>Ammar Foley </div>
-                                              </div>
-                                            </td>
-                                            <td>496</td>
-                                            <td><a><img src="../assets/img/delete.svg " alt="Image" style="width: 15px;"></a></td>
-                                          </tr>
-										  <tr role="row" class="even">
-                                            <td>
-                                              <div class="d-flex align-items-center ">
-                                                <span class="teacher-profile-img ">
-                                                  <img src="../assets/img/person-img.png" alt="Image">
-                                                </span>
-                                                <div>Ammar Foley </div>
-                                              </div>
-                                            </td>
-                                            <td>496</td>
-                                            <td><a><img src="../assets/img/delete.svg " alt="Image" style="width: 15px;"></a></td>
-                                          </tr>
-										  <tr role="row" class="odd">
-                                            <td>
-                                              <div class="d-flex align-items-center ">
-                                                <span class="teacher-profile-img ">
-                                                  <img src="../assets/img/person-img.png" alt="Image">
-                                                </span>
-                                                <div>Ammar Foley </div>
-                                              </div>
-                                            </td>
-                                            <td>496</td>
-                                            <td><a><img src="../assets/img/delete.svg " alt="Image" style="width: 15px;"></a></td>
-                                          </tr>
-										  <tr role="row" class="even">
-                                            <td>
-                                              <div class="d-flex align-items-center ">
-                                                <span class="teacher-profile-img ">
-                                                  <img src="../assets/img/person-img.png" alt="Image">
-                                                </span>
-                                                <div>Ammar Foley </div>
-                                              </div>
-                                            </td>
-                                            <td>496</td>
-                                            <td><a><img src="../assets/img/delete.svg " alt="Image" style="width: 15px;"></a></td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
+                            <div class="row improving-students mt-3 p-3">
+                              <div class="col-md-12 p-0">
+                                <div class="card pt-3">
+                                  <div class="d-flex justify-content-between align-items-center card-head pb-3 ">
+                                    <p class="fw-bold" style="color:#262A41; font-size: 15px;">Improving List Of Students</p>
+                                    <div class="">
+                                      <button class="submit btn btn-round me-2" style="padding: 6px 10px;">
+                                        <a href="#"> Edit List </a>
+                                      </button>
                                     </div>
                                   </div>
-<!--                                   <div class="row table-pagination-footer ">
-                                    <div class="col-sm-12 col-md-5 ">
-                                      <div class="dataTables_info " id="basic-datatables_info " role="status " aria-live="polite ">Showing 1 to 10 of 15 entries</div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-7 ">
-                                      <div class="dataTables_paginate paging_simple_numbers " id="basic-datatables_paginate ">
-                                        <ul class="pagination ">
-                                          <li class="paginate_button page-item previous disabled " id="basic-datatables_previous ">
-                                            <a href="# " aria-controls="basic-datatables " data-dt-idx="0 " tabindex="0 " class="page-link
-                                                                            ">
-                                              <i class="fas fa-angle-left "></i>
-                                            </a>
-                                          </li>
-                                          <li class="paginate_button page-item active ">
-                                            <a href="# " aria-controls="basic-datatables " data-dt-idx="1 " tabindex="0 " class="page-link ">1</a>
-                                          </li>
-                                          <li class="paginate_button page-item ">
-                                            <a href="# " aria-controls="basic-datatables " data-dt-idx="2 " tabindex="0 " class="page-link ">2</a>
-                                          </li>
-                                          <li class="paginate_button page-item ">
-                                            <a href="# " aria-controls="basic-datatables " data-dt-idx="3 " tabindex="0 " class="page-link ">3</a>
-                                          </li>
-                                          <li class="paginate_button page-item ">
-                                            <a href="# " aria-controls="basic-datatables " data-dt-idx="4 " tabindex="0 " class="page-link ">...</a>
-                                          </li>
-                                          <li class="paginate_button page-item ">
-                                            <a href="# " aria-controls="basic-datatables " data-dt-idx="5 " tabindex="0 " class="page-link ">10</a>
-                                          </li>
-                                          <li class="paginate_button page-item next " id="basic-datatables_next ">
-                                            <a href="# " aria-controls="basic-datatables " data-dt-idx="7 " tabindex="0 " class="page-link ">
-                                              <i class="fas fa-angle-right "></i>
-                                            </a>
-                                          </li>
-                                        </ul>
+                                  <div class="card-body">
+                                    <div class="table-responsive">
+                                      <div id="basic-datatables_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
+                                        <div class="row">
+                                          <div class="col-sm-12 table_flow">
+                                            <table id="improve-students" class="teacher_table display table table-striped table-hover dataTable " role="grid" aria-describedby="basic-datatables_info ">
+                                              <thead>
+                                                <tr role="row">
+                                                  <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1 " colspan="1 " aria-sort="ascending " aria-label="Students: activate to sort column descending" style="">Students</th>
+                                                  <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1 " colspan="1 " aria-label="Marks: activate to sort column ascending " style=" ">Marks</th>
+                                                  <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1 " colspan="1 " aria-label="Remove activate to sort column ascending " style="">Remove </th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr role="row" class="odd">
+                                                  <td>
+                                                    <div class="d-flex align-items-center ">
+                                                      <span class="teacher-profile-img ">
+                                                        <img src="../assets/img/person-img.png" alt="Image">
+                                                      </span>
+                                                      <div>Ammar Foley </div>
+                                                    </div>
+                                                  </td>
+                                                  <td>496</td>
+                                                  <td>
+                                                    <a>
+                                                      <img src="../assets/img/delete.svg " alt="Image" style="width: 15px;">
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                  <td>
+                                                    <div class="d-flex align-items-center ">
+                                                      <span class="teacher-profile-img ">
+                                                        <img src="../assets/img/person-img.png" alt="Image">
+                                                      </span>
+                                                      <div>Ammar Foley </div>
+                                                    </div>
+                                                  </td>
+                                                  <td>496</td>
+                                                  <td>
+                                                    <a>
+                                                      <img src="../assets/img/delete.svg " alt="Image" style="width: 15px;">
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                  <td>
+                                                    <div class="d-flex align-items-center ">
+                                                      <span class="teacher-profile-img ">
+                                                        <img src="../assets/img/person-img.png" alt="Image">
+                                                      </span>
+                                                      <div>Ammar Foley </div>
+                                                    </div>
+                                                  </td>
+                                                  <td>496</td>
+                                                  <td>
+                                                    <a>
+                                                      <img src="../assets/img/delete.svg " alt="Image" style="width: 15px;">
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                  <td>
+                                                    <div class="d-flex align-items-center ">
+                                                      <span class="teacher-profile-img ">
+                                                        <img src="../assets/img/person-img.png" alt="Image">
+                                                      </span>
+                                                      <div>Ammar Foley </div>
+                                                    </div>
+                                                  </td>
+                                                  <td>496</td>
+                                                  <td>
+                                                    <a>
+                                                      <img src="../assets/img/delete.svg " alt="Image" style="width: 15px;">
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                  <td>
+                                                    <div class="d-flex align-items-center ">
+                                                      <span class="teacher-profile-img ">
+                                                        <img src="../assets/img/person-img.png" alt="Image">
+                                                      </span>
+                                                      <div>Ammar Foley </div>
+                                                    </div>
+                                                  </td>
+                                                  <td>496</td>
+                                                  <td>
+                                                    <a>
+                                                      <img src="../assets/img/delete.svg " alt="Image" style="width: 15px;">
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                  <td>
+                                                    <div class="d-flex align-items-center ">
+                                                      <span class="teacher-profile-img ">
+                                                        <img src="../assets/img/person-img.png" alt="Image">
+                                                      </span>
+                                                      <div>Ammar Foley </div>
+                                                    </div>
+                                                  </td>
+                                                  <td>496</td>
+                                                  <td>
+                                                    <a>
+                                                      <img src="../assets/img/delete.svg " alt="Image" style="width: 15px;">
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                        <!--                                   <div class="row table-pagination-footer "><div class="col-sm-12 col-md-5 "><div class="dataTables_info " id="basic-datatables_info " role="status " aria-live="polite ">Showing 1 to 10 of 15 entries</div></div><div class="col-sm-12 col-md-7 "><div class="dataTables_paginate paging_simple_numbers " id="basic-datatables_paginate "><ul class="pagination "><li class="paginate_button page-item previous disabled " id="basic-datatables_previous "><a href="# " aria-controls="basic-datatables " data-dt-idx="0 " tabindex="0 " class="page-link
+                                                                            "><i class="fas fa-angle-left "></i></a></li><li class="paginate_button page-item active "><a href="# " aria-controls="basic-datatables " data-dt-idx="1 " tabindex="0 " class="page-link ">1</a></li><li class="paginate_button page-item "><a href="# " aria-controls="basic-datatables " data-dt-idx="2 " tabindex="0 " class="page-link ">2</a></li><li class="paginate_button page-item "><a href="# " aria-controls="basic-datatables " data-dt-idx="3 " tabindex="0 " class="page-link ">3</a></li><li class="paginate_button page-item "><a href="# " aria-controls="basic-datatables " data-dt-idx="4 " tabindex="0 " class="page-link ">...</a></li><li class="paginate_button page-item "><a href="# " aria-controls="basic-datatables " data-dt-idx="5 " tabindex="0 " class="page-link ">10</a></li><li class="paginate_button page-item next " id="basic-datatables_next "><a href="# " aria-controls="basic-datatables " data-dt-idx="7 " tabindex="0 " class="page-link "><i class="fas fa-angle-right "></i></a></li></ul></div></div></div> -->
                                       </div>
                                     </div>
-                                  </div> -->
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-									
-									
-                                </div>
-                            </div>
-                        </div>
-					  
                     </div>
                     <div class="tab-pane fade " id="theoryChange" role="tabpanel ">
                       <h3>Theory of Change</h3>
                       <p>Information about the theory of change.</p>
-					  <div class="form">
+                      <div class="form">
                         <div class="row mt-3">
                           <div class="col-md-12 px-1">
                             <label class="form-label">Title/Question</label>
@@ -825,50 +804,45 @@
                           </div>
                         </div>
                       </div>
-					  
-					  <div class="row mt-3">
-                    <div class="dashed-border">
-					<img src="../assets/img/dashed-border.svg" alt="Image"/>
-					</div>
-					  <div class="steps">
-
-    <div class="step">
-        <div class="step-header">Outputs</div>
-        <div class="step-content">
-            <p>Teachers using the textbooks and new curriculum in class.</p>
-            <p>Students following curriculum.</p>
-            <p>Improved student performance on mathematics tests.</p>
-        </div>
-    </div>
-
-    <div class="step">
-        <div class="step-header">Outcomes</div>
-        <div class="step-content">
-            <p>Teachers using the textbooks and new curriculum in class.</p>
-            <p>Students following curriculum.</p>
-            <p>Improved student performance on mathematics tests.</p>
-        </div>
-    </div>
-
-    <div class="step">
-        <div class="step-header">Final Outcomes</div>
-        <div class="step-content">
-            <p>Teachers using the textbooks and new curriculum in class.</p>
-            <p>Students following curriculum.</p>
-            <p>Improved student performance on mathematics tests.</p>
-        </div>
-    </div>
-	
-	<div class="step">
-        <div class="step-header">Final Outcomes</div>
-        <div class="step-content">
-            <p>Teachers using the textbooks and new curriculum in class.</p>
-            <p>Students following curriculum.</p>
-            <p>Improved student performance on mathematics tests.</p>
-        </div>
-    </div>
-</div>
-					  </div>
+                      <div class="row mt-3">
+                        <div class="dashed-border">
+                          <img src="../assets/img/dashed-border.svg" alt="Image" />
+                        </div>
+                        <div class="steps">
+                          <div class="step">
+                            <div class="step-header">Outputs</div>
+                            <div class="step-content">
+                              <p>Teachers using the textbooks and new curriculum in class.</p>
+                              <p>Students following curriculum.</p>
+                              <p>Improved student performance on mathematics tests.</p>
+                            </div>
+                          </div>
+                          <div class="step">
+                            <div class="step-header">Outcomes</div>
+                            <div class="step-content">
+                              <p>Teachers using the textbooks and new curriculum in class.</p>
+                              <p>Students following curriculum.</p>
+                              <p>Improved student performance on mathematics tests.</p>
+                            </div>
+                          </div>
+                          <div class="step">
+                            <div class="step-header">Final Outcomes</div>
+                            <div class="step-content">
+                              <p>Teachers using the textbooks and new curriculum in class.</p>
+                              <p>Students following curriculum.</p>
+                              <p>Improved student performance on mathematics tests.</p>
+                            </div>
+                          </div>
+                          <div class="step">
+                            <div class="step-header">Final Outcomes</div>
+                            <div class="step-content">
+                              <p>Teachers using the textbooks and new curriculum in class.</p>
+                              <p>Students following curriculum.</p>
+                              <p>Improved student performance on mathematics tests.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -904,7 +878,6 @@
     <script src="../assets/js/edumetrica.min.js"></script>
   </body>
 </html>
-
 <script>
   let rangeInput = document.getElementById("rangeInput");
 
@@ -912,6 +885,7 @@
     let value = rangeInput.value;
     rangeInput.style.background = `linear-gradient(to right, #4caf50 ${value}%, #ddd ${value}%)`;
   }
-  rangeInput.addEventListener("input ", updateSlider);
-  updateSlider();
+
+  rangeInput.addEventListener("input", updateSlider);
+  updateSlider(); 
 </script>
