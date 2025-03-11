@@ -107,6 +107,9 @@ span.profile-username {
     align-items: center;
     justify-content: center;
 }
+.dashboard_icon_out {
+    background: #27AAE1;
+}
 .user-icon-out img {
     width: 25px;
     height: 25px;
@@ -1353,7 +1356,7 @@ div#predefined-criteria .filter select {
 	    margin-bottom: 0;
 }
 .chart-img {
-    max-width: 130px;
+    max-width: 245px;
 }
 .overview-content p {
     margin-bottom: 0;
@@ -1706,4 +1709,106 @@ input.permission {
     width: 30px;
     margin-left: 18px;
     padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Super Admin Screens css
+--------------------------------------------------------------*/
+.payment_summary {
+  justify-content: normal;
+  display: block;
+}
+.bottom_average_sec {
+  max-width: 100%;
+  width: 100%;
+}
+.payment_summary::before {
+  display: none;
+}
+
+a#notifDropdown_two {
+  background: #fff;
+  border: 1px solid rgba(38, 42, 65, 0.2);
+  padding: 10px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+.heading_filter {
+  border-bottom: 1px solid #f1f1f1;
+  color: #444;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 15px;
+  text-align: center;
+}
+.modal-body .heading_filter {
+  text-align: center;
+}
+.modal-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+}
+.filter-label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #27aae1;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-top: 10px;
+}
+/* User Type List */
+.user-type-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+.user-type-list li {
+  background: transparent;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid transparent;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px !important;
+  border-radius: 20px !important;
+  border: 1px solid #ccc !important;
+}
+.user-type-list li.active {
+  background: white;
+  border: 2px solid #007bff;
+  box-shadow: 0px 2px 8px rgba(0, 123, 255, 0.2);
+}
+.new_notification {
+  width: 400px;
+  padding: 50px 20px !important;
+  border-radius: 20px;
+}
+button.sky-btn.btn-apply {
+  align-items: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 10px;
+  padding: 0.65rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 1;
+  border-radius: 3px;
+  border-radius: 50px;
+}
+.bottom_colorbar {
+    background: #F7941E;
+    padding: 20px 20px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 90%;
+    color: #fff;
+	padding: 10px 20px;
+	font-size: 16px;	
 }

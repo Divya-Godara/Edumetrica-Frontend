@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Edumetrica (Teacher Details)</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon//favicon-16x16.png">
+    <link rel="manifest" href="../assets/img/favicon//site.webmanifest">
+    <!-- Fonts and icons -->
+    <link href="https://fonts.cdnfonts.com/css/tt-firs-neue-trl" rel="stylesheet">
+    <script src="../assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Public Sans:300,400,500,600,700"]
+        },
+        custom: {
+          families: ["Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons", ],
+          urls: ["../assets/css/fonts.min.css"],
+        },
+        active: function() {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="../assets/css/edumetrica.min.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="top-panel">
+          <div class="sidebar-logo">
+            <div class="logo_header">
+              <a href="index.html" class="logo">
+                <img src="../assets/img/logo.png" alt="navbar brand" />
+              </a>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+          <div class="sidebar-wrapper scrollbar scrollbar-inner">
+            <div class="sidebar-content">
+              <ul class="nav nav-secondary">
+                <li class="nav-item">
+                  <a href="#">
+                    <i class="fas fa-desktop"></i>
+                    <p>Lorem Ipsum</p>
+                  </a>
+                </li>
+                <li class="nav-item active">
+                  <a href="#dashboard" class="" aria-expanded="false">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <p>Teachers</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#">
+                    <i class="fas fa-desktop"></i>
+                    <p>Lorem Ipsum</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#">
+                    <i class="fas fa-desktop"></i>
+                    <p>Lorem Ipsum</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#">
+                    <i class="fas fa-desktop"></i>
+                    <p>Lorem Ipsum</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-panel">
+          <div class="logout-panel">
+            <ul class="nav nav-secondary">
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fas fa-sign-out-alt"></i>
+                  <p>Logout</p>
+                </a>
+              </li>
+              <ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+      <div class="main-panel">
+        <div class="main-header">
+          <div class="main-header-logo">
+            <!-- Logo Header -->
+            <div class="logo-header" data-background-color="dark">
+              <a href="index.html" class="logo">
+                <img src="../assets/img/logo.png" alt="navbar brand" />
+              </a>
+              <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                  <i class="gg-menu-right"></i>
+                </button>
+                <button class="btn btn-toggle sidenav-toggler">
+                  <i class="gg-menu-left"></i>
+                </button>
+              </div>
+              <button class="topbar-toggler more">
+                <i class="gg-more-vertical-alt"></i>
+              </button>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+          <!-- Navbar Header -->
+          <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
+            <div class="container-fluid">
+              <nav class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <button type="submit" class="btn btn-search pe-1">
+                      <img src="../assets/img/search.svg">
+                    </button>
+                  </div>
+                  <input type="text" placeholder="Search ..." class="form-control" />
+                </div>
+              </nav>
+              <ul class="top_icons navbar-nav topbar-nav ms-md-auto align-items-center">
+                <li class="nav-item topbar-icon dropdown hidden-caret">
+                  <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="../assets/img/bell.svg">
+                    <span class="notification">4</span>
+                  </a>
+                  <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+                    <li>
+                      <div class="dropdown-title"> You have 4 new notification </div>
+                    </li>
+                    <li>
+                      <div class="notif-scroll scrollbar-outer">
+                        <div class="notif-center">
+                          <a href="#">
+                            <div class="notif-icon notif-primary">
+                              <i class="fa fa-user-plus"></i>
+                            </div>
+                            <div class="notif-content">
+                              <span class="block"> New user registered </span>
+                              <span class="time">5 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-icon notif-success">
+                              <i class="fa fa-comment"></i>
+                            </div>
+                            <div class="notif-content">
+                              <span class="block"> Rahmad commented on Admin </span>
+                              <span class="time">12 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-img">
+                              <img src="../assets/img/person-img.png" alt="Img Profile" />
+                            </div>
+                            <div class="notif-content">
+                              <span class="block"> Reza send messages to you </span>
+                              <span class="time">12 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-icon notif-danger">
+                              <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="notif-content">
+                              <span class="block"> Farrah liked Admin </span>
+                              <span class="time">17 minutes ago</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="see-all" href="javascript:void(0);">See all notifications <i class="fa fa-angle-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item topbar-icon dropdown hidden-caret">
+                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="../assets/img/settings.svg">
+                  </a>
+                </li>
+                <li class="nav-item topbar-user dropdown hidden-caret">
+                  <a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#" aria-expanded="false">
+                    <div class="avatar-sm">
+                      <img src="../assets/img/james.svg" alt="..." class="avatar-img rounded-circle" />
+                    </div>
+                    <span class="profile-username">
+                      <span class="fw-bold">James</span>
+                    </span>
+                    <span class="down-icon">
+                      <img src="../assets/img/down-arrow.png">
+                    </span>
+                  </a>
+                  <ul class="account dropdown-menu dropdown-user animated fadeIn">
+                    <div class="dropdown-user-scroll scrollbar-outer">
+                      <li>
+                        <div class="user-box">
+                          <div class="avatar-lg">
+                            <img src="../assets/img/james.svg" alt="image profile" class="avatar-img rounded" />
+                          </div>
+                          <div class="u-text">
+                            <h4>James</h4>
+                            <p class="text-muted">hello@example.com</p>
+                            <a href="profile.html" class="view-profile btn btn-xs">View Profile</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">My Balance</a>
+                        <a class="dropdown-item" href="#">Inbox</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Account Setting</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- End Navbar -->
+        </div>
+        <div class="container">
+          <div class="page-inner">
+            <div class="page-inner-header d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
+              <div class="icon_text d-flex align-items-center">
+                <div class="user-icon-out">
+                  <img class="back-img" src="../assets/img/arrow.svg" alt="Image" />
+                </div>
+                <div>
+                  <h3 class="mb-0">Teachers Details</h3>
+                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit ...</p>
+                </div>
+              </div>
+            </div>
+            <div class="row teacher-details">
+              <div class="col-md-12">
+                <div class="d-flex teacher-info">
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center teacher-profile">
+                      <img src="../assets/img/girl.png" alt="Image" />
+                      <div>
+                        <p class="teacher_name">Florence Shaw</p>
+                        <p class="teacher_mail">florance@untitledui.com</p>
+                      </div>
+                      <div>
+                        <button class="btn edit-btn">
+                          <a href="#">
+                            <img src="../assets/img/erase.svg" alt="Image" />Edit </a>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="inst_details">
+                      <img src="../assets/img/cap.svg" alt="Image" />
+                      <div>
+                        <p>Institute Name</p>
+                        <span>StarWood University</span>
+                      </div>
+                    </div>
+                    <div class="inst_details">
+                      <img src="../assets/img/person.svg" alt="Image" />
+                      <div>
+                        <p>Coordinator Name</p>
+                        <span>Ammar Foley</span>
+                      </div>
+                    </div>
+                    <div class="inst_details">
+                      <img src="../assets/img/mail.svg" alt="Image" />
+                      <div>
+                        <p>Institute Email</p>
+                        <span>ammar@untitledui.com</span>
+                      </div>
+                    </div>
+                    <div class="inst_details">
+                      <img src="../assets/img/call.svg" alt="Image" />
+                      <div>
+                        <p>Teacher Contact</p>
+                        <span>777-784-6214</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+			<div class="row d-flex justify-content-end">
+			<div class="col-md-6">
+			  <div class="bottom_colorbar">
+			    <div class="colorbar-content d-flex justify-content-between align-items-center">
+				   <div class="left_color">Pricing Plan</div>
+				   <div class="right_color">
+				   <p><b>Standard</b> $239 <span>Per Month</span></p>
+				   </div>
+				</div>				  
+				</div>								
+			  </div>
+			 </div>  
+            <div class="row mt-5 courses-list">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h3>List of Courses</h3>
+                <button class="add btn btn-round me-2">
+                  <a href="#">
+                    <i class="fas fa-plus"></i>Add Course </a>
+                </button>
+              </div>
+              <div class="col-sm-12">
+                <table class="teacher_table display table table-striped table-hover dataTable" role="grid" aria-describedby="basic-datatables_info">
+                  <thead>
+                    <tr role="row">
+                      <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Course Name: activate to sort column descending" style="width: 22%;">Course Name</th>
+                      <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="Total Lesson: activate to sort column ascending" style="">Total Lesson</th>
+                      <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="Duration: activate to sort column ascending" style="">Duration</th>
+                      <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="Students Enrolled: activate to sort column ascending" style="">Students Enrolled</th>
+                      <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="Allow to Edit / Modify: activate to sort column ascending" style="">Allow to Edit / Modify</th>
+                      <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="Action: activate to sort column ascending" style="">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr role="row" class="odd">
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <span class="course-img">
+                            <img src="../assets/img/course-img.png" alt="Image">
+                          </span> The Complete Web Developer Course 2.0
+                        </div>
+                      </td>
+                      <td>12</td>
+                      <td>9hr 30min</td>
+                      <td>32</td>
+                      <td>
+                        <div class="switch-btn d-flex align-items-center">Deny <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="toggleSwitch" checked>
+                          </div> Allow
+                      </td>
+                      <td>
+                        <div class="actions">
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/erase.svg" alt="Image" />Edit </a>
+                          </button>
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/eye.svg" alt="Image" />View </a>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr role="row" class="even">
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <span class="course-img">
+                            <img src="../assets/img/course-img.png" alt="Image">
+                          </span> The Complete Web Developer Course 2.0
+                        </div>
+                      </td>
+                      <td>12</td>
+                      <td>9hr 30min</td>
+                      <td>32</td>
+                      <td>
+                        <div class="switch-btn d-flex align-items-center">Deny <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="toggleSwitch" checked>
+                          </div> Allow
+                      </td>
+                      <td>
+                        <div class="actions">
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/erase.svg" alt="Image" />Edit </a>
+                          </button>
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/eye.svg" alt="Image" />View </a>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr role="row" class="odd">
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <span class="course-img">
+                            <img src="../assets/img/course-img.png" alt="Image">
+                          </span> The Complete Web Developer Course 2.0
+                        </div>
+                      </td>
+                      <td>12</td>
+                      <td>9hr 30min</td>
+                      <td>32</td>
+                      <td>
+                        <div class="switch-btn d-flex align-items-center">Deny <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="toggleSwitch" checked>
+                          </div> Allow
+                      </td>
+                      <td>
+                        <div class="actions">
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/erase.svg" alt="Image" />Edit </a>
+                          </button>
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/eye.svg" alt="Image" />View </a>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr role="row" class="even">
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <span class="course-img">
+                            <img src="../assets/img/course-img.png" alt="Image">
+                          </span> The Complete Web Developer Course 2.0
+                        </div>
+                      </td>
+                      <td>12</td>
+                      <td>9hr 30min</td>
+                      <td>32</td>
+                      <td>
+                        <div class="switch-btn d-flex align-items-center">Deny <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="toggleSwitch" checked>
+                          </div> Allow
+                      </td>
+                      <td>
+                        <div class="actions">
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/erase.svg" alt="Image" />Edit </a>
+                          </button>
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/eye.svg" alt="Image" />View </a>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr role="row" class="odd">
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <span class="course-img">
+                            <img src="../assets/img/course-img.png" alt="Image">
+                          </span> The Complete Web Developer Course 2.0
+                        </div>
+                      </td>
+                      <td>12</td>
+                      <td>9hr 30min</td>
+                      <td>32</td>
+                      <td>
+                        <div class="switch-btn d-flex align-items-center">Deny <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="toggleSwitch" checked>
+                          </div> Allow
+                      </td>
+                      <td>
+                        <div class="actions">
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/erase.svg" alt="Image" />Edit </a>
+                          </button>
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/eye.svg" alt="Image" />View </a>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr role="row" class="even">
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <span class="course-img">
+                            <img src="../assets/img/course-img.png" alt="Image">
+                          </span> The Complete Web Developer Course 2.0
+                        </div>
+                      </td>
+                      <td>12</td>
+                      <td>9hr 30min</td>
+                      <td>32</td>
+                      <td>
+                        <div class="switch-btn d-flex align-items-center">Deny <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="toggleSwitch" checked>
+                          </div> Allow
+                      </td>
+                      <td>
+                        <div class="actions">
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/erase.svg" alt="Image" />Edit </a>
+                          </button>
+                          <button class="btn btn-sm">
+                            <a href="">
+                              <img src="../assets/img/eye.svg" alt="Image" />View </a>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <!-- jQuery Scrollbar -->
+    <script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <!-- Chart JS -->
+    <script src="../assets/js/plugin/chart.js/chart.min.js"></script>
+    <!-- jQuery Sparkline -->
+    <script src="../assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+    <!-- Chart Circle -->
+    <script src="../assets/js/plugin/chart-circle/circles.min.js"></script>
+    <!-- Datatables -->
+    <script src="../assets/js/plugin/datatables/datatables.min.js"></script>
+    <!-- Bootstrap Notify -->
+    <script src="../assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+    <!-- jQuery Vector Maps -->
+    <script src="../assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+    <script src="../assets/js/plugin/jsvectormap/world.js"></script>
+    <!-- Sweet Alert -->
+    <script src="../assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+    <!-- edumetrica JS -->
+    <script src="../assets/js/edumetrica.min.js"></script>
+  </body>
+</html>
