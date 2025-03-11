@@ -1319,6 +1319,7 @@ div#predefined-criteria .filter select {
     background: #F4F9FC;
     height: 50px;
     border-radius: 8px;
+    margin-right: 10px;
 }
 .stats-card h2 {
     font-size: 28px;
@@ -1330,7 +1331,7 @@ div#predefined-criteria .filter select {
     margin-bottom: 0;
     color: #8A8FAC;
     font-size: 15px;
-    line-height: 28px;
+    line-height: 20px;
 }
 .performance-details {
     color: #27AAE1;
@@ -1649,4 +1650,60 @@ input.permission {
     border: 0.84px solid rgb(38 42 65 / 11%);
     width: 80px;
     height: 35px !important;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Teacher Screens css
+--------------------------------------------------------------*/
+
+.course-item {
+	background: #fff;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-image {
+    width: 110px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.course-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: #262A41;
+}
+
+.course-desc {
+    font-size: 13px;
+    color: #888B99;
+    line-height: 20px;
+}
+
+.badge-box {
+    background: #f8f9fa;
+    padding: 8px 12px;
+    border-radius: 8px;
+    gap: 5px;
+    width: 49%;
+    float: left;
+}
+.badge-box p {
+    font-size: 13px;
+    margin-bottom: 0;
+    color: #262A41;
+    line-height: 15px;
+}
+.course-item a {
+    height: 30px;
+    width: 30px;
+    margin-left: 18px;
+    padding: 0;
 }
