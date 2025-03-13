@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Edumetrica (User Permissions)</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon//favicon-16x16.png">
+    <link rel="manifest" href="../assets/img/favicon//site.webmanifest">
+    <!-- Fonts and icons -->
+    <link href="https://fonts.cdnfonts.com/css/tt-firs-neue-trl" rel="stylesheet">
+    <script src="../assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Public Sans:300,400,500,600,700"]
+        },
+        custom: {
+          families: ["Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons", ],
+          urls: ["../assets/css/fonts.min.css"],
+        },
+        active: function() {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="../assets/css/edumetrica.min.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="top-panel">
+          <div class="sidebar-logo">
+            <div class="logo_header">
+              <a href="index.html" class="logo">
+                <img src="../assets/img/logo.png" alt="navbar brand" />
+              </a>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+          <div class="sidebar-wrapper scrollbar scrollbar-inner">
+            <div class="sidebar-content">
+              <ul class="nav nav-secondary">
+                <li class="nav-item">
+                  <a href="#">
+                    <i class="fas fa-desktop"></i>
+                    <p>Lorem Ipsum</p>
+                  </a>
+                </li>
+                <li class="nav-item active">
+                  <a href="#dashboard" class="" aria-expanded="false">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <p>Teachers</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#">
+                    <i class="fas fa-desktop"></i>
+                    <p>Lorem Ipsum</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#">
+                    <i class="fas fa-desktop"></i>
+                    <p>Lorem Ipsum</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#">
+                    <i class="fas fa-desktop"></i>
+                    <p>Lorem Ipsum</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-panel">
+          <div class="logout-panel">
+            <ul class="nav nav-secondary">
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fas fa-sign-out-alt"></i>
+                  <p>Logout</p>
+                </a>
+              </li>
+              <ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+      <div class="main-panel">
+        <div class="main-header">
+          <div class="main-header-logo">
+            <!-- Logo Header -->
+            <div class="logo-header" data-background-color="dark">
+              <a href="index.html" class="logo">
+                <img src="../assets/img/logo.png" alt="navbar brand" />
+              </a>
+              <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                  <i class="gg-menu-right"></i>
+                </button>
+                <button class="btn btn-toggle sidenav-toggler">
+                  <i class="gg-menu-left"></i>
+                </button>
+              </div>
+              <button class="topbar-toggler more">
+                <i class="gg-more-vertical-alt"></i>
+              </button>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+          <!-- Navbar Header -->
+                    <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
+            <div class="container-fluid">
+              <nav class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <button type="submit" class="btn btn-search pe-1">
+                      <img src="../assets/img/search.svg">
+                    </button>
+                  </div>
+                  <input type="text" placeholder="Search ..." class="form-control" />
+                </div>
+              </nav>
+              <ul class="top_icons navbar-nav topbar-nav ms-md-auto align-items-center">
+                <li class="nav-item topbar-icon dropdown hidden-caret">
+                  <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="../assets/img/bell.svg">
+                    <span class="notification">4</span>
+                  </a>
+                  <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+                    <li>
+                      <div class="dropdown-title"> You have 4 new notification </div>
+                    </li>
+                    <li>
+                      <div class="notif-scroll scrollbar-outer">
+                        <div class="notif-center">
+                          <a href="#">
+                            <div class="notif-icon notif-primary">
+                              <i class="fa fa-user-plus"></i>
+                            </div>
+                            <div class="notif-content">
+                              <span class="block"> New user registered </span>
+                              <span class="time">5 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-icon notif-success">
+                              <i class="fa fa-comment"></i>
+                            </div>
+                            <div class="notif-content">
+                              <span class="block"> Rahmad commented on Admin </span>
+                              <span class="time">12 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-img">
+                              <img src="../assets/img/person-img.png" alt="Img Profile" />
+                            </div>
+                            <div class="notif-content">
+                              <span class="block"> Reza send messages to you </span>
+                              <span class="time">12 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-icon notif-danger">
+                              <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="notif-content">
+                              <span class="block"> Farrah liked Admin </span>
+                              <span class="time">17 minutes ago</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="see-all" href="javascript:void(0);">See all notifications <i class="fa fa-angle-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item topbar-icon dropdown hidden-caret">
+                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="../assets/img/settings.svg">
+                  </a>
+                </li>
+                <li class="nav-item topbar-user dropdown hidden-caret">
+                  <a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#" aria-expanded="false">
+                    <div class="avatar-sm">
+                      <img src="../assets/img/james.svg" alt="..." class="avatar-img rounded-circle" />
+                    </div>
+                    <span class="profile-username">
+                      <span class="fw-bold">James</span>
+                    </span>
+                    <span class="down-icon">
+                      <img src="../assets/img/down-arrow.png">
+                    </span>
+                  </a>
+                  <ul class="account dropdown-menu dropdown-user animated fadeIn">
+                    <div class="dropdown-user-scroll scrollbar-outer">
+                      <li>
+                        <div class="user-box">
+                          <div class="avatar-lg">
+                            <img src="../assets/img/james.svg" alt="image profile" class="avatar-img rounded" />
+                          </div>
+                          <div class="u-text">
+                            <h4>James</h4>
+                            <p class="text-muted">hello@example.com</p>
+                            <a href="profile.html" class="view-profile btn btn-xs">View Profile</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">My Balance</a>
+                        <a class="dropdown-item" href="#">Inbox</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Account Setting</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- End Navbar -->
+        </div>
+        <div class="container">
+          <div class="page-inner">
+            <div class="page-inner-header d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
+              <div class="icon_text d-flex align-items-center">
+                <div class="user-icon-out">
+                  <img src="../assets/img/request.png" alt="Image" />
+                </div>
+                <div>
+                  <h3 class="mb-0">Upgrade Requests</h3>
+                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit ...</p>
+                </div>
+              </div>
+            </div>
+            <div class="row user-manage">
+              <div class="col-md-12 p-0">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <div id="basic-datatables_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <table id="user-permission" class="teacher_table display table table-striped table-hover dataTable" role="grid" aria-describedby="basic-datatables_info">
+                              <thead>
+                                <tr role="row">
+                                  <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-sort="ascending" aria-label="User: activate to sort column descending" style="">Request Raised By</th>
+                                  <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="EduPlus: activate to sort column ascending" style="">No. of Coordinators</th>
+                                  <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="EduPlus: activate to sort column ascending" style="">No. of Teachers</th>
+                                  <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="EduPlus: activate to sort column ascending" style="">No. of Courses</th>	
+                                  <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="EduPlus: activate to sort column ascending" style="">Request Date</th>								  
+                                  <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="EduPlus: activate to sort column ascending" style="">Monthly Amount</th>								  
+                                  <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="No. of Coordinators: activate to sort column ascending" style="">Six Months Amount</th>
+								   <th class="sorting" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="No. of Coordinators: activate to sort column ascending" style="">Yearly Amount</th>
+                                  <th class="" tabindex="0" aria-controls="basic-datatables" rowspan="1" colspan="1" aria-label="No. of Coordinators: activate to sort column ascending" style=""></th>								  
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr role="row" class="odd">
+                                  <td>
+                                    <div class="d-flex align-items-center">
+                                      <span class="teacher-profile-img">
+                                        <img src="../assets/img/person-img.png" alt="Image" />
+                                      </span>Ammar Foley
+                                    </div>
+                                  </td>
+								   <td>8</td>
+								   <td>15</td>
+								   <td>20</td> 	
+								   <td>31/12/2024</td> 	
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>								  								 
+                                  <td>
+                                    <a class="sky-btn btn btn-sm" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Send Price</a>
+                                  </td>
+                                </tr>
+								                                <tr role="row" class="even">
+                                  <td>
+                                    <div class="d-flex align-items-center">
+                                      <span class="teacher-profile-img">
+                                        <img src="../assets/img/person-img.png" alt="Image" />
+                                      </span>Ammar Foley
+                                    </div>
+                                  </td>
+								   <td>8</td>
+								   <td>15</td>
+								   <td>20</td> 	
+								   <td>31/12/2024</td> 	
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>								  								 
+                                  <td>
+                                    <a class="sky-btn btn btn-sm" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Send Price</a>
+                                  </td>
+                                </tr>
+								                                <tr role="row" class="odd">
+                                  <td>
+                                    <div class="d-flex align-items-center">
+                                      <span class="teacher-profile-img">
+                                        <img src="../assets/img/person-img.png" alt="Image" />
+                                      </span>Ammar Foley
+                                    </div>
+                                  </td>
+								   <td>8</td>
+								   <td>15</td>
+								   <td>20</td> 	
+								   <td>31/12/2024</td> 	
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>								  								 
+                                  <td>
+                                    <a class="sky-btn btn btn-sm" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Send Price</a>
+                                  </td>
+                                </tr>
+								                                <tr role="row" class="even">
+                                  <td>
+                                    <div class="d-flex align-items-center">
+                                      <span class="teacher-profile-img">
+                                        <img src="../assets/img/person-img.png" alt="Image" />
+                                      </span>Ammar Foley
+                                    </div>
+                                  </td>
+								   <td>8</td>
+								   <td>15</td>
+								   <td>20</td> 	
+								   <td>31/12/2024</td> 	
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>								  								 
+                                  <td>
+                                    <a class="sky-btn btn btn-sm" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Send Price</a>
+                                  </td>
+                                </tr>
+								                                <tr role="row" class="odd">
+                                  <td>
+                                    <div class="d-flex align-items-center">
+                                      <span class="teacher-profile-img">
+                                        <img src="../assets/img/person-img.png" alt="Image" />
+                                      </span>Ammar Foley
+                                    </div>
+                                  </td>
+								   <td>8</td>
+								   <td>15</td>
+								   <td>20</td> 	
+								   <td>31/12/2024</td> 	
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>								  								 
+                                  <td>
+                                    <a class="sky-btn btn btn-sm" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Send Price</a>
+                                  </td>
+                                </tr>
+								                                <tr role="row" class="even">
+                                  <td>
+                                    <div class="d-flex align-items-center">
+                                      <span class="teacher-profile-img">
+                                        <img src="../assets/img/person-img.png" alt="Image" />
+                                      </span>Ammar Foley
+                                    </div>
+                                  </td>
+								   <td>8</td>
+								   <td>15</td>
+								   <td>20</td> 	
+								   <td>31/12/2024</td> 	
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>								  								 
+                                  <td>
+                                    <a class="sky-btn btn btn-sm" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Send Price</a>
+                                  </td>
+                                </tr>
+								                                <tr role="row" class="odd">
+                                  <td>
+                                    <div class="d-flex align-items-center">
+                                      <span class="teacher-profile-img">
+                                        <img src="../assets/img/person-img.png" alt="Image" />
+                                      </span>Ammar Foley
+                                    </div>
+                                  </td>
+								   <td>8</td>
+								   <td>15</td>
+								   <td>20</td> 	
+								   <td>31/12/2024</td> 	
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>								  								 
+                                  <td>
+                                    <a class="sky-btn btn btn-sm" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Send Price</a>
+                                  </td>
+                                </tr>
+								                                <tr role="row" class="even">
+                                  <td>
+                                    <div class="d-flex align-items-center">
+                                      <span class="teacher-profile-img">
+                                        <img src="../assets/img/person-img.png" alt="Image" />
+                                      </span>Ammar Foley
+                                    </div>
+                                  </td>
+								   <td>8</td>
+								   <td>15</td>
+								   <td>20</td> 	
+								   <td>31/12/2024</td> 	
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>								  								 
+                                  <td>
+                                    <a class="sky-btn btn btn-sm" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Send Price</a>
+                                  </td>
+                                </tr>
+								                                <tr role="row" class="odd">
+                                  <td>
+                                    <div class="d-flex align-items-center">
+                                      <span class="teacher-profile-img">
+                                        <img src="../assets/img/person-img.png" alt="Image" />
+                                      </span>Ammar Foley
+                                    </div>
+                                  </td>
+								   <td>8</td>
+								   <td>15</td>
+								   <td>20</td> 	
+								   <td>31/12/2024</td> 	
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>
+                                  <td>
+                                    <input type="text" class="permission bg-white form-control" placeholder="">
+                                  </td>								  								 
+                                  <td>
+                                    <a class="sky-btn btn btn-sm" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Send Price</a>
+                                  </td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <!--                                                 <div class="row table-pagination-footer"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="basic-datatables_info" role="status" aria-live="polite">Showing 1 to 10 of 15 entries</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="basic-datatables_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="basic-datatables_previous"><a href="#" aria-controls="basic-datatables" data-dt-idx="0" tabindex="0" class="page-link"><i class="fas fa-angle-left"></i></a></li><li class="paginate_button page-item active"><a href="#" aria-controls="basic-datatables" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="basic-datatables" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="basic-datatables" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item "><a href="#" aria-controls="basic-datatables" data-dt-idx="4" tabindex="0" class="page-link">...</a></li><li class="paginate_button page-item "><a href="#" aria-controls="basic-datatables" data-dt-idx="5" tabindex="0" class="page-link">10</a></li><li class="paginate_button page-item next" id="basic-datatables_next"><a href="#" aria-controls="basic-datatables" data-dt-idx="7" tabindex="0" class="page-link"><i class="fas fa-angle-right"></i></a></li></ul></div></div></div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <!-- jQuery Scrollbar -->
+    <script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <!-- Chart JS -->
+    <script src="../assets/js/plugin/chart.js/chart.min.js"></script>
+    <!-- jQuery Sparkline -->
+    <script src="../assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+    <!-- Chart Circle -->
+    <script src="../assets/js/plugin/chart-circle/circles.min.js"></script>
+    <!-- Datatables -->
+    <script src="../assets/js/plugin/datatables/datatables.min.js"></script>
+    <!-- Bootstrap Notify -->
+    <script src="../assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+    <!-- jQuery Vector Maps -->
+    <script src="../assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+    <script src="../assets/js/plugin/jsvectormap/world.js"></script>
+    <!-- Sweet Alert -->
+    <script src="../assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+    <!-- edumetrica JS -->
+    <script src="../assets/js/edumetrica.min.js"></script>
+  </body>
+</html>
